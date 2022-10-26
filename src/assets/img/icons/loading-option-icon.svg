@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="13" viewBox="0 0 116 13">
+    <g data-name="Group 3" transform="translate(-145 -442)">
+        <circle cx="6.5" cy="6.5" r="6.5" transform="translate(180 442)" style="fill:#0b2739"/>
+        <circle data-name="Oval" cx="6.5" cy="6.5" r="6.5" transform="translate(203 442)" style="fill:#0b2739"/>
+        <rect width="25" height="13" rx="6.5" transform="translate(145 442)" style="fill:#0b2739"/>
+        <circle data-name="Oval" cx="6.5" cy="6.5" r="6.5" transform="translate(225 442)" style="fill:#0b2739"/>
+        <circle data-name="Oval" cx="6.5" cy="6.5" r="6.5" transform="translate(248 442)" style="fill:#0b2739"/>
+    </g>
+</svg>

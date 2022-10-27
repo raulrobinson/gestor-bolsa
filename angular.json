@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "soluciones-digitales": {
+    "gestion-de-bolsas": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/soluciones-digitales",
+            "outputPath": "dist/gestion-de-bolsas",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "soluciones-digitales:build:production"
+              "browserTarget": "gestion-de-bolsas:build:production"
             },
             "development": {
-              "browserTarget": "soluciones-digitales:build:development"
+              "browserTarget": "gestion-de-bolsas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "soluciones-digitales:build"
+            "browserTarget": "gestion-de-bolsas:build"
           }
         },
         "test": {

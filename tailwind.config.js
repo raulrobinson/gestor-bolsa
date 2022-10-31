@@ -8,7 +8,7 @@ module.exports = {
       'currentColor': '#F6F6F6',
       'secondaryColor': '#019DF4',
       'white': '#FFFFFF',
-      brown: {
+      gray: {
         100: '#F5F5F5',
         200: '#D3D4D3',
         300: '#B6B7B7',

@@ -38,6 +38,15 @@ module.exports = {
         300: '#F28D15'
       }
     },
+    fontFamily:{
+      'brandnormal':['telefonicabrand'],
+    },
+    fontWeight:{
+      'bold': 700,
+      'extralight':200,
+      'light':300,
+      'regular':400,
+    },
     extend: {},
   },
   plugins: [],

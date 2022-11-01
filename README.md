@@ -6,9 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -25,3 +22,96 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+# ESTRUCTURA GENERAL DE LA PLANTILLA:
+-ASSETS
+  -IMGS [ONLY IMAGES]
+    -ICONS
+    -BACKGROUNDS
+    -LOGOS
+    -OTHERS [OTHER IMAGE CATEGORIES]
+  -MEDIA [DIFFERENT OF IMAGE]
+    -VIDEOS
+    -SOUND
+    .
+    .
+    .N
+  -FONTS
+  -FILES [EXTRA FILES]
+-ENVIRONMENTS
+  -ENVIRONMENT.PROD.TS
+  -ENVIRONMET.DEV.TS
+  -ENVIRONMET.TEST.TS
+  -ENVIRONMENT.TS
+-APP:
+  -COMMONS [FOLDER]
+    -DATA
+      -MAPPER.TS [ABSTRACT CLASS]
+    -APPLICATION
+      -USECASE.TS [INTERFACE]
+  -GLOBAL: [MODULE] -> [GLOBAL LAYOUT DEPEND OF PROJECT]
+    -DOMAIN
+      -MODELS
+        -SIDENAV-ITEM-MENU.MODEL.TS
+    -APPLICATION
+      -USE-CASE
+        -CHANGE-TO-DARK-MODE-USECASE.TS
+        .
+        .
+        .N
+    -PRESENTATION
+      -ROUTING
+        -GLOBAL-ROUTING.TS
+      -GUARDS [FOLDER]
+      -PIPES [FOLDER]
+      -DIRECTIVES [FOLDER]
+      -COMPONENTS
+        -SIDENAV-COMPONENT [FOLDER COMPONENT]
+        -HEADER-COMPONENT [FOLDER COMPONENT]
+        -CONTAINER-COMPONENT [FOLDER COMPONENT]
+        -FOOTER-COMPONENT [FOLDER COMPONENT]
+    -DATA
+      -INTERCEPTORS [FOLDER]
+        -GLOBAL-INTERCEPTOR.TS
+  -USER: [MODULE] -> [EXAMPLE OF MODULE]
+    -DOMAIN [FOLDER]
+      -MODELS [FOLDER]
+        -USER.MODEL.TS [INTERFACE OR CLASS][SUGGEST CLASS - AVOID ANEMIC DOMAIN MODEL]
+      -REPOSITORIES [FOLDER]
+        -USER.REPOSITORY.TS [INTERFACE]
+    -APPLICATION [FOLDER]
+      -USE_CASE [FOLDER]
+        -LOGIN-USECASE.TS [IMPLEMENTS USECASE]
+        -REGISTER-USECASE.TS [IMPLEMENTS USECASE]
+    -DATA [FOLDER]
+      -ENTITIES [FOLDER]
+        -USER.ENTITY.TS [INTERFACE OR CLASS]
+      -REPOSITORIES
+        -USER-IMPLEMENTATIONS.REPOSITORIES.TS [SERVICE]
+      -INTERCEPTORS
+        -AUTH.INTERCEPTOR.TS [SERVICE]
+      -MAPPERS [FOLDER]
+        -USER-REPOSITORY.MAPPER.TS [CLASS, IMPLEMENTS MAPPER INTERFACE]
+        .
+        .
+        .
+        .N
+    -PRESENTATION [FOLDER]
+      -ROUTING
+        -USER-ROUTING.TS
+      -GUARDS [FOLDER]
+      -PIPES [FOLDER]
+      -DIRECTIVES [FOLDER]
+      -COMPONENTS [FOLDER]
+        -USER-DETAIL-COMPONENT [FOLDER COMPONENT]
+        -USER-LIST-COMPONENT [FOLDER COMPONENT]
+        .
+        .
+        .N
+    -USER.MODULE.TS [MODULE FILE]
+      * DECLARAR COMPONENTES
+      * IMPORTAR COMMOMMODULE
+      * EXPORTAR LOS COMPONENTES QUE REQUIERAN EXPORTARSE
+## se usa tailwind: https://tailwindcss.com/

@@ -78,7 +78,7 @@
     @apply block mb-2 text-sm text-blue-600;
   }
   .input_global{
-    @apply shadow-sm border border-gray-300 text-blue-600 text-sm rounded-lg block w-full p-2.5
-    hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none shadow-md;
+    @apply shadow-lg text-blue-600 text-sm rounded-lg block w-full p-2.5
+    hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none;
   }
 }

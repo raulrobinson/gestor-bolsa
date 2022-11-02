@@ -96,7 +96,7 @@
 
 @layer components {
   .btn_secondary_global {
-    @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded;
+    @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded shadow-lg;
   }
 
   .btn_delete_global {

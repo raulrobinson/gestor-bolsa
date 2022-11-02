@@ -9,58 +9,76 @@
   font-style: normal;
   font-display: swap;
   src: url(./assets/fonts/brand/normal/bold/Telefonica-Bold.otf) format("truetype"),
-       url(./assets/fonts/brand/normal/bold/Telefonica-Bold.woff2) format("woff2"),
-       url(./assets/fonts/brand/normal/bold/Telefonica-Bold.woff) format("woff");
+  url(./assets/fonts/brand/normal/bold/Telefonica-Bold.woff2) format("woff2"),
+  url(./assets/fonts/brand/normal/bold/Telefonica-Bold.woff) format("woff");
 }
+
 @font-face {
   font-family: "telefonicabrand";
   font-weight: 200;
   font-style: normal;
   font-display: swap;
   src: url(./assets/fonts/brand/normal/extralight/Telefonica-ExtraLight.otf) format("truetype"),
-       url(./assets/fonts/brand/normal/extralight/Telefonica-ExtraLight.woff2) format("woff2"),
-       url(./assets/fonts/brand/normal/extralight/Telefonica-ExtraLight.woff) format("woff");
+  url(./assets/fonts/brand/normal/extralight/Telefonica-ExtraLight.woff2) format("woff2"),
+  url(./assets/fonts/brand/normal/extralight/Telefonica-ExtraLight.woff) format("woff");
 }
+
 @font-face {
   font-family: "telefonicabrand";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
   src: url(./assets/fonts/brand/normal/light/Telefonica-Light.otf) format("truetype"),
-       url(./assets/fonts/brand/normal/light/Telefonica-Light.woff2) format("woff2"),
-       url(./assets/fonts/brand/normal/light/Telefonica-Light.woff) format("woff");
+  url(./assets/fonts/brand/normal/light/Telefonica-Light.woff2) format("woff2"),
+  url(./assets/fonts/brand/normal/light/Telefonica-Light.woff) format("woff");
 }
+
 @font-face {
   font-family: "telefonicabrand";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
   src: url(./assets/fonts/brand/normal/regular/Telefonica-Regular.otf) format("truetype"),
-       url(./assets/fonts/brand/normal/regular/Telefonica-Regular.woff2) format("woff2"),
-       url(./assets/fonts/brand/normal/regular/Telefonica-Regular.woff) format("woff");
+  url(./assets/fonts/brand/normal/regular/Telefonica-Regular.woff2) format("woff2"),
+  url(./assets/fonts/brand/normal/regular/Telefonica-Regular.woff) format("woff");
 }
+
 @font-face {
   font-family: "telefonicabrand";
   font-weight: normal;
   font-style: italic;
   font-display: swap;
   src: url(./assets/fonts/brand/normal/regularitalic/Telefonica-RegularItalic.otf) format("truetype"),
-       url(./assets/fonts/brand/normal/regularitalic/Telefonica-RegularItalic.woff2) format("woff2"),
-       url(./assets/fonts/brand/normal/regularitalic/Telefonica-RegularItalic.woff) format("woff");
+  url(./assets/fonts/brand/normal/regularitalic/Telefonica-RegularItalic.woff2) format("woff2"),
+  url(./assets/fonts/brand/normal/regularitalic/Telefonica-RegularItalic.woff) format("woff");
 }
+
 @font-face {
   font-family: "telefonicabrandcap";
   font-weight: normal;
   font-style: italic;
   font-display: swap;
   src: url(./assets/fonts/brand/cap/regular/TelefonicaCap-Regular.otf) format("truetype"),
-       url(./assets/fonts/brand/cap/regular/TelefonicaCap-Regular.woff2) format("woff2"),
-       url(./assets/fonts/brand/cap/regular/TelefonicaCap-Regular.woff) format("woff");
+  url(./assets/fonts/brand/cap/regular/TelefonicaCap-Regular.woff2) format("woff2"),
+  url(./assets/fonts/brand/cap/regular/TelefonicaCap-Regular.woff) format("woff");
 }
 
 
 @layer base {
   html {
     font-family: telefonicabrand
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+  .label_global{
+    @apply block mb-2 text-sm font-medium text-blue-600;
+  }
+  .input-global{
+    @apply shadow-sm border border-gray-300 text-blue-600 text-sm rounded-lg block w-full p-2.5
+    hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none;
   }
 }

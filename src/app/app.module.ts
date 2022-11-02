@@ -7,6 +7,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {GlobalModule} from './global/global.module';
+import {CreateBagModule} from "./create-bag/create-bag.module";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {GlobalModule} from './global/global.module';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    GlobalModule
+    GlobalModule,
+    CreateBagModule
   ],
   providers: [],
   bootstrap: [AppComponent]

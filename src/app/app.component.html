@@ -1,14 +1,11 @@
-<div class="grid grid-cols-6 h-screen">
-
-  <div class="col-span-1">
+<div class="flex">
+  <aside class="h-screen sticky top-0 md:w-2/12 w-0">
     <app-sidenav></app-sidenav>
-  </div>
-
-  <div class="col-span-5">
-    <app-header></app-header>
+  </aside>
+  <main class="w-full">
+    <div class="sticky top-0">
+      <app-header></app-header>
+    </div>
     <app-equipment></app-equipment>
-  </div>
-
-
+  </main>
 </div>
-

@@ -99,6 +99,9 @@
   .btn_secondary_global {
     @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded;
   }
+  .btn_delete_global {
+    @apply hover:bg-magenta-300 text-magenta-300 font-bold hover:text-white w-full h-full py-2.5 border border-magenta-300 rounded;
+  }
   .label_global{
     @apply block mb-2 text-sm text-blue-600;
   }

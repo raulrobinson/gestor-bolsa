@@ -1,38 +1,31 @@
 <form action="#" method="POST">
   <div class="overflow-hidden sm:rounded-md">
     <div class="px-4 py-5 sm:p-6">
-      <div class="grid grid-cols-6 gap-6">
-        <div class="col-span-6 sm:col-span-3">
-          <label for="id_princing" class="label-global">ID
-            PRINCING:</label>
-          <input type="text" id="id_princing"
-                 class="input-global"
-                 placeholder="ID PRINCING" required>
+      <div class="grid grid-cols-12 gap-5">
+        <div class="md:md:md:col-span-6 sm:col-span-12">
+          <label for="id_princing" class="label_global">ID PRINCING:</label>
+          <input type="text" id="id_princing" class="input_global" placeholder="ID PRINCING" required>
         </div>
 
-        <div class="col-span-6 sm:col-span-3">
-          <label for="segmento"
-                 class="label-global">SEGMENTO:</label>
+        <div class="md:col-span-6 sm:col-span-12">
+          <label for="segmento" class="label_global">SEGMENTO:</label>
           <select id="segmento" name="country" autocomplete="country-name"
-                  class="input-global">
+                  class="input_global">
             <option>United States</option>
             <option>Canada</option>
             <option>Mexico</option>
           </select>
         </div>
-        <div class="col-span-6 sm:col-span-3">
-          <label for="holding"
-                 class="label-global">HOLDING:</label>
-          <select id="holding" name="country" autocomplete="country-name"
-                  class="input-global">
+        <div class="md:col-span-6 sm:col-span-12">
+          <label for="holding" class="label_global">HOLDING:</label>
+          <select id="holding" name="country" autocomplete="country-name" class="input_global">
             <option>United States</option>
             <option>Canada</option>
             <option>Mexico</option>
           </select>
         </div>
-
-        <div class="col-span-6 sm:col-span-3">
-          <label class="label-global">ORIGEN:</label>
+        <div class="md:col-span-6 sm:col-span-12">
+          <label class="label_global">ORIGEN:</label>
           <fieldset class="flex mt-2">
             <legend></legend>
             <div class="flex items-center ml-4 ">
@@ -53,27 +46,35 @@
             </div>
           </fieldset>
         </div>
-        <div class="col-span-6 sm:col-span-3">
-          <label for="consecutivo"
-                 class="label-global">CONSECUTIVO
-            E-BUSINESS</label>
-          <input type="text" id="consecutivo"
-                 class="input-global"
-                 placeholder="CONSECUTIVO E-BUSINESS" required>
+        <div class="md:col-span-6 sm:col-span-12">
+          <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS</label>
+          <input type="text" id="consecutivo" class="input_global" placeholder="CONSECUTIVO E-BUSINESS" required>
         </div>
-        <div class="col-span-6 sm:col-span-3">
-          <label for="identification" class="label-global">IDENTIFICACIÓN:</label>
+        <div class="md:col-span-6 sm:col-span-12">
+          <label for="identification" class="label_global">IDENTIFICACIÓN:</label>
           <input type="text" id="identification"
-                 class="input-global"
+                 class="input_global"
                  placeholder="IDENTIFICACIÓN" required>
+        </div>
+        <div class="md:col-span-3 sm:col-span-12">
+          <label for="identification" class="label_global">FECHA FIN:</label>
+          <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+        <div class="md:col-span-3 sm:col-span-12">
+          <label for="identification" class="label_global">FECHA FIN:</label>
+          <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+        <div class="md:col-span-6 sm:col-span-12">
+          <label for="vigencia" class="label_global">VIGENCIA</label>
+          <input type="text" id="vigencia" class="input_global" placeholder="VIGENCIA" required>
         </div>
       </div>
     </div>
-    <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-      <button type="submit"
-              class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-        Save
-      </button>
-    </div>
+    <!--    <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">-->
+    <!--      <button type="submit"-->
+    <!--              class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">-->
+    <!--        Save-->
+    <!--      </button>-->
+    <!--    </div>-->
   </div>
 </form>

@@ -71,14 +71,14 @@
 }
 
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  .btn_secondary_global {
+    @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded;
   }
   .label_global{
     @apply block mb-2 text-sm text-blue-600;
   }
   .input_global{
     @apply shadow-sm border border-gray-300 text-blue-600 text-sm rounded-lg block w-full p-2.5
-    hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none;
+    hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none shadow-md;
   }
 }

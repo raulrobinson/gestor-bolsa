@@ -9,7 +9,7 @@ module.exports = {
       'secondaryColor': '#019DF4',
       'white': '#FFFFFF',
       gray: {
-        100: '#F5F5F5',
+        100: '#F6F6F6',
         200: '#D3D4D3',
         300: '#B6B7B7',
         400: '#86888C',

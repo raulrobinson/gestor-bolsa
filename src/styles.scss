@@ -17,11 +17,10 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color:#019DF4;
+  background-color: #019DF4;
   border-radius: 14px;
   border: 3px solid var(--primary);
 }
-
 
 
 @tailwind components;
@@ -99,14 +98,21 @@
   .btn_secondary_global {
     @apply hover:bg-blue-300 text-blue-300 font-bold hover:text-white w-full h-full py-2.5 border border-blue-300 rounded;
   }
+
   .btn_delete_global {
     @apply hover:bg-magenta-300 text-magenta-300 font-bold hover:text-white w-full h-full py-2.5 border border-magenta-300 rounded;
   }
-  .label_global{
+
+  .label_global {
     @apply block mb-2 text-sm text-blue-600;
   }
-  .input_global{
+
+  .input_global {
     @apply shadow-lg text-blue-600 text-sm rounded-lg block w-full p-2.5
     hover:border-blue-300 focus:text-gray-500 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+
+  .input_disable_global {
+    @apply shadow-lg text-white text-sm rounded-lg block w-full p-2.5 hover:border-blue-300 bg-gray-200;
   }
 }

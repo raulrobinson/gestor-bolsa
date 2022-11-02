@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-menu-catchment',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })

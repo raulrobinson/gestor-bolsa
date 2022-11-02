@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {GlobalModule} from './global/global.module';
 import {CreateBagModule} from "./create-bag/create-bag.module";
+import {CatchmentManagementModule} from "./catchment-management/catchment-management.module";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {CreateBagModule} from "./create-bag/create-bag.module";
     ReactiveFormsModule,
     BrowserAnimationsModule,
     GlobalModule,
-    CreateBagModule
+    CreateBagModule,
+    CatchmentManagementModule
   ],
   providers: [],
   bootstrap: [AppComponent]

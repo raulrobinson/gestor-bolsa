@@ -1,0 +1,125 @@
+  <div class="overflow-hidden sm:rounded-md" *ngIf="isMenu">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="grid grid-cols-12 gap-5">
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="bolsa" class="label_global">Seleccione Bolsa a Gestionar:</label>
+          <select id="bolsa" name="country" autocomplete="bolsa-name" class="input_global">
+            <option value="0">Seleccione la Bolsa a Gestionar</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="tipo_gestion_select" class="label_global">Gestion a Realizar:</label>
+          <select id="tipo_gestion_select" name="country" autocomplete="country-name" class="input_global">
+            <option value="0">Seleccione Tipo Gestion</option>
+          </select>
+        </div>
+        <!--button-->
+        <div class="col-span-12 flex justify-end mt-10">
+          <div class="w-40">
+            <button class="btn_secondary_global" (click)="showMenu()">
+              Siguiente
+            </button>
+          </div>
+        </div>
+        <!-- end button-->
+      </div>
+    </div>
+  </div>
+
+  <form action="#" method="POST" *ngIf="!isMenu">
+    <div class="overflow-hidden sm:rounded-md">
+      <div class="px-4 py-5 sm:p-6">
+        <div class="grid grid-cols-12 gap-5">
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="bolsa_gestion" class="label_global">BOLSA A GESTIONAR:</label>
+            <input type="text" id="bolsa_gestion" class="input_disable_global" placeholder="Bolsa a Gestionar" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="tipo_gestion" class="label_global">TIPO DE GESTION:</label>
+            <input type="text" id="tipo_gestion" class="input_disable_global" placeholder="Tipo Gestión" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="monto_aprobado" class="label_global">MONTO APROBADO:</label>
+            <input type="text" id="monto_aprobado" class="input_disable_global" placeholder="Monto Aprobado" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="monto_disponible" class="label_global">MONTO DISPONIBLE:</label>
+            <input type="text" id="monto_disponible" class="input_disable_global" placeholder="Monto Disponible" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="segmento" class="label_global">SEGMENTO:</label>
+            <input type="text" id="segmento" class="input_disable_global" placeholder="Segmento" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="holding" class="label_global">Holding:</label>
+            <input type="text" id="holding" class="input_disable_global" placeholder="Holding" disabled>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="select_equipo" class="label_global">Seleccione Equipo:</label>
+            <select id="select_equipo" name="select_equipo" class="input_global">
+              <option value="0">Seleccione equipo</option>
+            </select>
+          </div>
+
+
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS</label>
+            <input type="text" id="consecutivo" class="input_global" placeholder="CONSECUTIVO E-BUSINESS" required>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="identification" class="label_global">IDENTIFICACIÓN:</label>
+            <input type="text" id="identification"
+                   class="input_global"
+                   placeholder="IDENTIFICACIÓN" required>
+          </div>
+
+          <div class="md:col-span-3 col-span-12">
+            <label for="identification" class="label_global">FECHA FIN:</label>
+            <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+          </div>
+
+
+          <div class="md:col-span-3 col-span-12">
+            <label for="identification" class="label_global">FECHA FIN:</label>
+            <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+          </div>
+
+          <div class="md:col-span-6 col-span-12">
+            <label for="vigencia" class="label_global">VIGENCIA</label>
+            <input type="text" id="vigencia" class="input_global" placeholder="VIGENCIA" required>
+          </div>
+          <div class="md:col-span-6 col-span-12">
+            <label for="cantidad_ap" class="label_global">CANTIDAD APROBADA</label>
+            <input type="text" id="cantidad_ap" class="input_global" placeholder="CANTIDAD APROBADA" required>
+          </div>
+          <div class="md:col-span-6 col-span-12">
+            <label for="linea" class="label_global">LINEAS APROBADAS</label>
+            <input type="text" id="linea" class="input_global" placeholder="LINEAS APROBADAS" required>
+          </div>
+
+
+          <!--button-->
+          <div class="col-span-12 flex justify-end mt-10">
+            <div class="w-40">
+              <button class="btn_secondary_global">
+                Crear
+              </button>
+            </div>
+          </div>
+          <!--        end button-->
+        </div>
+      </div>
+    </div>
+  </form>
+

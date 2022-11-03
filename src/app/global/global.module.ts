@@ -5,6 +5,10 @@ import { HeaderComponent } from './presentation/components/header/header.compone
 import { ContainerComponent } from './presentation/components/container/container.component';
 import { FooterComponent } from './presentation/components/footer/footer.component';
 import { SidenavItemMenuComponent } from './presentation/components/sidenav-item-menu/sidenav-item-menu.component';
+import { NotFoundComponent } from './presentation/components/not-found/not-found.component';
+import { ForbiddenComponent } from './presentation/components/forbidden/forbidden.component';
+import { WelcomeComponent } from './presentation/components/welcome/welcome.component';
+import { GlobalRoutingModule } from './presentation/routing/global-routing.module';
 
 
 @NgModule({
@@ -13,16 +17,20 @@ import { SidenavItemMenuComponent } from './presentation/components/sidenav-item
     HeaderComponent,
     ContainerComponent,
     FooterComponent,
-    SidenavItemMenuComponent
+    SidenavItemMenuComponent,
+    NotFoundComponent,
+    ForbiddenComponent,
+    WelcomeComponent,
   ],
   exports: [
     SidenavComponent,
     HeaderComponent,
     ContainerComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    GlobalRoutingModule
   ]
 })
 export class GlobalModule { }

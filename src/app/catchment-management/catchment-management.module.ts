@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './presentation/components/menu/menu.component';
 import { MoneyComponent } from './presentation/components/money/money.component';
 import { EquipmentComponent } from './presentation/components/equipment/equipment.component';
+import { CatchmentManagementRoutingModule } from './presentation/routing/catchment-management-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { EquipmentComponent } from './presentation/components/equipment/equipmen
     MoneyComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CatchmentManagementRoutingModule
   ]
 })
 export class CatchmentManagementModule { }

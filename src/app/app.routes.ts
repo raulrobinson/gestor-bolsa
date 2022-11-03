@@ -1,14 +1,17 @@
 import { Routes } from '@angular/router';
-import { MenuComponent as CreateBagMenuComponent } from './create-bag/presentation/components/menu/menu.component';
-import { MenuComponent as CatchmentManagementMenuComponent } from './catchment-management/presentation/components/menu/menu.component';
 
 export const AppRoutes: Routes = [
+
   {
     path: "crear-bolsa",
-    component: CreateBagMenuComponent
+    loadChildren: () => import('./create-bag/create-bag.module').then(m => m.CreateBagModule)
   },
   {
     path: "gestion-captacion",
-    component: CatchmentManagementMenuComponent
+    loadChildren: () => import('./catchment-management/catchment-management.module').then(m => m.CatchmentManagementModule)
+  },
+  {
+    path: "",
+    loadChildren: () => import('./global/global.module').then(m => m.GlobalModule)
   }
 ];

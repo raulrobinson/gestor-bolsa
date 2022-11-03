@@ -28,5 +28,4 @@ import {CatchmentManagementModule} from "./catchment-management/catchment-manage
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

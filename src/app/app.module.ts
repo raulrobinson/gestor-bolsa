@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {GlobalModule} from './global/global.module';
 import {CreateBagModule} from "./create-bag/create-bag.module";
 import {CatchmentManagementModule} from "./catchment-management/catchment-management.module";
+import {RetentionManagementModule} from "./retention-management/retention-management.module";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {CatchmentManagementModule} from "./catchment-management/catchment-manage
     BrowserAnimationsModule,
     GlobalModule,
     CreateBagModule,
-    CatchmentManagementModule
+    CatchmentManagementModule,
+    RetentionManagementModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mixed',
+  selector: 'app-create-bag-mixed',
   templateUrl: './mixed.component.html',
   styleUrls: ['./mixed.component.scss']
 })

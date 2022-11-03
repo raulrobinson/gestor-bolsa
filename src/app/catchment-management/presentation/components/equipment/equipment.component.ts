@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-create-bag-equipment',
+  selector: 'app-catchment',
   templateUrl: './equipment.component.html',
   styleUrls: ['./equipment.component.scss']
 })
 export class EquipmentComponent implements OnInit {
+  isMenu: true;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  showMenu() {
+    this.isMenu = false;
+  }
 }

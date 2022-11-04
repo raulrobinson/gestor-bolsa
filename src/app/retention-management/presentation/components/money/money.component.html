@@ -88,22 +88,39 @@
           </select>
         </div>
 
+        <div class="col-span-12 text-center my-4">
+          <label class="label_global">Paso A Calculadora</label>
+          <hr class="divide-x-1 col-span-12">
+        </div>
+
         <div class="md:col-span-6 col-span-12">
-          <label for="consecutivo" class="label_global">VALOR DE EQUIPO *PASO CALCULADORA</label>
+          <label for="renova" class="label_global">VALOR CON IVA SCL O RENOVA:</label>
+          <input type="text" id="renova" class="input_global" placeholder="SCL o RENOVA" required>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="iva_pay" class="label_global">VALOR CON IVA A PAGAR POR CLIENTE:</label>
           <div class="flex w-full">
-            <input type="text" id="consecutivo" class="input_global" placeholder="Valor Equipo" required>
+            <input type="text" id="iva_pay" class="input_global" placeholder="valor con iva a pagar por el cliente"
+                   required>
             <div class="flex items-end w-full md:w-auto justify-end">
               <div class="px-2 w-full flex items-center h-full">
                 <input type="button" class="btn_secondary_global px-3 py-0 text-md h-full" value="Calcular">
-
               </div>
             </div>
           </div>
         </div>
 
+        <hr class="divide-x-1 col-span-12">
+
         <div class="md:col-span-6 col-span-12">
-          <label for="porcentaje" class="label_global">PORCENTAJE INGRESAR SCL:</label>
-          <input type="text" id="porcentaje" class="input_global" placeholder="Porcentaje SCL" required>
+          <label for="porcentaje" class="label_global">PORCENTAJE SCL:</label>
+          <input type="text" id="porcentaje" class="input_disable_global" placeholder="Porcentaje SCL" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="consecutivo" class="label_global">VALOR DE EQUIPO</label>
+          <input type="text" id="consecutivo" class="input_disable_global" placeholder="Valor Equipo" disabled>
         </div>
 
         <div class="md:col-span-6 col-span-12">
@@ -112,7 +129,7 @@
         </div>
 
         <div class="md:col-span-6 col-span-12">
-          <label for="select_nit" class="label_global">SELECIONE NIT:</label>
+          <label for="select_nit" class="label_global">NIT:</label>
           <select id="select_nit" name="select_equipo" class="input_global">
             <option value="0">Seleccione NIT a Asociar</option>
           </select>

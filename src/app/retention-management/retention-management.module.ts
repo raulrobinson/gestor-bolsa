@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './presentation/components/menu/menu.component';
 import { EquipmentComponent } from './presentation/components/equipment/equipment.component';
 import { MoneyComponent } from './presentation/components/money/money.component';
+import { MassiveRetentionComponent } from './presentation/components/massive-retention/massive-retention.component';
 
 
 
@@ -10,13 +11,15 @@ import { MoneyComponent } from './presentation/components/money/money.component'
   declarations: [
     MenuComponent,
     EquipmentComponent,
-    MoneyComponent
+    MoneyComponent,
+    MassiveRetentionComponent
   ],
-  exports: [
-    MenuComponent,
-    EquipmentComponent,
-    MoneyComponent
-  ],
+    exports: [
+        MenuComponent,
+        EquipmentComponent,
+        MoneyComponent,
+        MassiveRetentionComponent
+    ],
   imports: [
     CommonModule
   ]

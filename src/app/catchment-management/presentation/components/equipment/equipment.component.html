@@ -3,14 +3,14 @@
     <div class="grid grid-cols-12 gap-5">
 
       <div class="md:col-span-6 col-span-12">
-        <label for="bolsa" class="label_global">Seleccione Bolsa a Gestionar:</label>
+        <label for="bolsa" class="label_global">Seleccione Bolsa a Gestionar<em class="text-magenta-300">*</em></label>
         <select id="bolsa" name="country" autocomplete="bolsa-name" class="input_global">
           <option value="0">Seleccione la Bolsa a Gestionar</option>
         </select>
       </div>
 
       <div class="md:col-span-6 col-span-12">
-        <label for="tipo_gestion_select" class="label_global">Gestion a Realizar:</label>
+        <label for="tipo_gestion_select" class="label_global">Gestion a Realizar<em class="text-magenta-300">*</em></label>
         <select id="tipo_gestion_select" name="country" autocomplete="country-name" class="input_global">
           <option value="0">Seleccione Tipo Gestion</option>
         </select>
@@ -32,6 +32,8 @@
   <div class="overflow-hidden sm:rounded-md">
     <div class="px-4 py-5 sm:p-6">
       <div class="grid grid-cols-12 gap-5">
+
+<!--        disable buttons-->
 
         <div class="md:col-span-6 col-span-12">
           <label for="bolsa_gestion" class="label_global">BOLSA A GESTIONAR:</label>
@@ -63,59 +65,86 @@
           <input type="text" id="holding" class="input_disable_global" placeholder="Holding" disabled>
         </div>
 
+<!--        end disable buttons-->
+
         <div class="md:col-span-6 col-span-12">
-          <label for="select_equipo" class="label_global">SELECIONE EQUIPO:</label>
+          <label for="select_equipo" class="label_global">SELECIONE EQUIPO<em class="text-magenta-300">*</em></label>
           <select id="select_equipo" name="select_equipo" class="input_global">
             <option value="0">Seleccione equipo</option>
           </select>
         </div>
 
         <div class="md:col-span-6 col-span-12">
-          <label for="consecutivo" class="label_global">VALOR DE EQUIPO *PASO CALCULADORA</label>
-          <div class="flex w-full">
-            <input type="text" id="consecutivo" class="input_global" placeholder="Valor Equipo" required>
-            <div class="flex items-end w-full md:w-auto justify-end">
-              <div class="px-2 w-full flex items-center h-full">
-                <input type="button" class="btn_secondary_global px-3 py-0 text-md h-full" value="Calcular">
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:col-span-6 col-span-12">
-          <label for="porcentaje" class="label_global">PORCENTAJE INGRESAR SCL:</label>
-          <input type="text" id="porcentaje" class="input_global" placeholder="Porcentaje SCL" required>
-        </div>
-
-        <div class="md:col-span-6 col-span-12">
-          <label for="select_nit" class="label_global">SELECIONE NIT:</label>
+          <label for="select_nit" class="label_global">SELECIONE NIT<em class="text-magenta-300">*</em></label>
           <select id="select_nit" name="select_equipo" class="input_global">
             <option value="0">Seleccione NIT a Asociar</option>
           </select>
         </div>
 
         <div class="md:col-span-6 col-span-12">
-          <label for="linea" class="label_global">NÚMERO DE LÍNEA:</label>
-          <input type="text" id="linea" class="input_global" placeholder="Número de Línea" required>
-        </div>
-
-        <div class="md:col-span-6 col-span-12">
-          <label for="tipo_envio" class="label_global">SELECIONE TIPO ENVIÓ:</label>
+          <label for="tipo_envio" class="label_global">SELECIONE TIPO ENVIÓ<em class="text-magenta-300">*</em></label>
           <select id="tipo_envio" name="tipo_envio" class="input_global">
             <option value="0">Seleccione Tipo Envió</option>
           </select>
         </div>
 
+        <div class="md:col-span-6 col-span-12">
+          <label for="linea" class="label_global">NÚMERO DE LÍNEA<em class="text-magenta-300">*</em></label>
+          <input type="text" id="linea" class="input_global" placeholder="Número de Línea" required>
+        </div>
+
+        <!--        calculadora-->
+
+        <div class="col-span-12 text-center my-4">
+          <label class="label_global">Paso A Calculadora<em class="text-magenta-300">*</em></label>
+          <hr class="divide-x-1 col-span-12">
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="renova" class="label_global">VALOR CON IVA SCL O RENOVA:</label>
+          <input type="text" id="renova" class="input_global" placeholder="SCL o RENOVA" required>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="iva_pay" class="label_global">VALOR CON IVA A PAGAR POR CLIENTE:</label>
+          <div class="flex w-full">
+            <input type="text" id="iva_pay" class="input_global" placeholder="valor con iva a pagar por el cliente"
+                   required>
+            <div class="flex items-end w-full md:w-auto justify-end">
+              <div class="px-2 w-full flex items-center h-full">
+                <input type="button" class="btn_secondary_global px-3 py-0 text-md h-full" value="Calcular">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--end calculadora-->
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="porcentaje" class="label_global">PORCENTAJE SCL<em class="text-magenta-300">*</em></label>
+          <input type="text" id="porcentaje" class="input_disable_global" placeholder="Porcentaje SCL" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="consecutivo" class="label_global">VALOR DE EQUIPO<em class="text-magenta-300">*</em></label>
+          <input type="text" id="consecutivo" class="input_disable_global" placeholder="Valor Equipo" disabled>
+        </div>
+
         <!--button-->
         <div class="col-span-12 flex justify-end mt-10">
-          <div class="w-40">
+          <div class="w-40 mx-2">
             <button class="btn_secondary_global">
               Crear
             </button>
           </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global" routerLink="/gestion-captacion">
+              Cancelar
+            </button>
+          </div>
         </div>
         <!--end button-->
+
       </div>
     </div>
   </div>

@@ -8,26 +8,26 @@ import { MenuItemModel } from '../../../../global/domain/models/MenuItemModel';
 })
 export class MenuComponent implements OnInit {
 
-  opciones!:MenuItemModel[];
+  options!:MenuItemModel[];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.opciones=[
+    this.options=[
       {
-        nombre:"Bolsa De Equipo",
-        icono:"movistar-icon",
-        ruta:"/crear-bolsa/bolsa-equipo"
+        name:"Bolsa De Dinero",
+        icon:"movistar-icon",
+        route:"/crear-bolsa/bolsa-dinero"
       },
       {
-        nombre:"Bolsa Mixta",
-        icono:"movistar-icon",
-        ruta:"/crear-bolsa/bolsa-mixta"
+        name:"Bolsa De Equipos",
+        icon:"movistar-icon",
+        route:"/crear-bolsa/bolsa-equipo"
       },
       {
-        nombre:"Bolsa De Dinero",
-        icono:"movistar-icon",
-        ruta:"/crear-bolsa/bolsa-dinero"
+        name:"Bolsa Mixta",
+        icon:"movistar-icon",
+        route:"/crear-bolsa/bolsa-mixta"
       }
     ]
   }

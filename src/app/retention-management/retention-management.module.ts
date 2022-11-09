@@ -5,6 +5,8 @@ import { EquipmentComponent } from './presentation/components/equipment/equipmen
 import { MoneyComponent } from './presentation/components/money/money.component';
 import { MassiveRetentionComponent } from './presentation/components/massive-retention/massive-retention.component';
 import { RetentionManagementRoutingModule } from './presentation/routing/retention-management-routing.module';
+import {SvgImporterComponent} from "../global/presentation/components/svg-importer/svg-importer.component";
+import { MixedComponent } from './presentation/components/mixed/mixed.component';
 
 
 
@@ -13,7 +15,8 @@ import { RetentionManagementRoutingModule } from './presentation/routing/retenti
     MenuComponent,
     EquipmentComponent,
     MoneyComponent,
-    MassiveRetentionComponent
+    MassiveRetentionComponent,
+    MixedComponent
   ],
     exports: [
         MenuComponent,
@@ -23,7 +26,8 @@ import { RetentionManagementRoutingModule } from './presentation/routing/retenti
     ],
   imports: [
     CommonModule,
-    RetentionManagementRoutingModule
+    RetentionManagementRoutingModule,
+    SvgImporterComponent
   ]
 })
 export class RetentionManagementModule { }

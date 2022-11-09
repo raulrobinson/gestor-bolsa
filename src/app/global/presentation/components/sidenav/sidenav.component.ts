@@ -13,29 +13,29 @@ export class SidenavComponent implements OnInit {
   constructor() {
     this.opcionesMenu=[
       {
-        icono:"agregar-icon",
-        nombre:"Creación De Bolsa",
-        ruta:"/crear-bolsa"
+        icon:"agregar-icon",
+        name:"Creación De Bolsa",
+        route:"/crear-bolsa"
       },
       {
-        icono:"portapapeles-icon",
-        nombre:"Gestión Captación",
-        ruta:"/gestion-captacion"
+        icon:"portapapeles-icon",
+        name:"Gestión Captación",
+        route:"/gestion-captacion"
       },
       {
-        icono:"escudo-icon",
-        nombre:"Gestión Retención",
-        ruta:"/gestion-retencion"
+        icon:"escudo-icon",
+        name:"Gestión Retención",
+        route:"/gestion-retencion"
       },
       {
-        icono:"editar-icon",
-        nombre:"Edición Bolsas",
-        ruta:"/editar-bolsa"
+        icon:"editar-icon",
+        name:"Edición Bolsas",
+        route:"/editar-bolsa"
       },
       {
-        icono:"aprobacion-icon",
-        nombre:"Aprobacion Bolsas",
-        ruta:"/aprobacion-bolsa"
+        icon:"aprobacion-icon",
+        name:"Aprobacion Bolsas",
+        route:"/aprobacion-bolsa"
       },
       // {
       //   icono:"eliminar-icon",

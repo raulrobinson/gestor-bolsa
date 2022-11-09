@@ -3,29 +3,30 @@
     <div class="px-4 py-5 sm:p-6">
       <div class="grid grid-cols-12 gap-5">
         <div class="md:col-span-6 col-span-12">
-          <label for="id_princing" class="label_global">ID PRINCING:</label>
+          <label for="id_princing" class="label_global">ID PRINCING<em class="text-magenta-300">*</em></label>
           <input type="text" id="id_princing" class="input_global" placeholder="ID PRINCING" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="segmento" class="label_global">SEGMENTO:</label>
+          <label for="segmento" class="label_global">SEGMENTO<em class="text-magenta-300">*</em></label>
           <select id="segmento" name="country" autocomplete="country-name"
                   class="input_global">
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option value="0" disabled>Seleccione Segmento</option>
+            <option>Pymes</option>
+            <option>Corporaciones</option>
+            <option>Empresas</option>
           </select>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="holding" class="label_global">HOLDING:</label>
+          <label for="holding" class="label_global">HOLDING<em class="text-magenta-300">*</em></label>
           <select id="holding" name="country" autocomplete="country-name" class="input_global">
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option value="0" disabled>Seleccione Holding</option>
+            <option>Holding I</option>
+            <option>Holding II</option>
           </select>
         </div>
         <div class="md:col-span-6 col-span-12">
           <fieldset class="flex h-full">
-            <legend class="label_global">ORIGEN</legend>
+            <legend class="label_global">ORIGEN<em class="text-magenta-300">*</em></legend>
             <div class="flex items-center ml-4 ">
               <input id="origen-option-1" type="radio" name="origen" value="captacion"
                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
@@ -45,38 +46,36 @@
           </fieldset>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS</label>
+          <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS<em class="text-magenta-300">*</em></label>
           <input type="text" id="consecutivo" class="input_global" placeholder="CONSECUTIVO E-BUSINESS" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="identification" class="label_global">IDENTIFICACIÓN:</label>
-          <input type="text" id="identification"
-                 class="input_global"
-                 placeholder="IDENTIFICACIÓN" required>
+          <label for="identification" class="label_global">IDENTIFICACIÓN<em class="text-magenta-300">*</em></label>
+          <input type="text" id="identification" class="input_global" placeholder="IDENTIFICACIÓN" required>
         </div>
         <div class="md:col-span-3 col-span-12">
-          <label for="identification" class="label_global">FECHA FIN:</label>
+          <label for="identification" class="label_global">FECHA FIN<em class="text-magenta-300">*</em></label>
           <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
         </div>
         <div class="md:col-span-3 col-span-12">
-          <label for="identification" class="label_global">FECHA FIN:</label>
+          <label for="identification" class="label_global">FECHA FIN<em class="text-magenta-300">*</em></label>
           <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="vigencia" class="label_global">VIGENCIA</label>
+          <label for="vigencia" class="label_global">VIGENCIA<em class="text-magenta-300">*</em></label>
           <input type="text" id="vigencia" class="input_global" placeholder="VIGENCIA" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="cantidad" class="label_global">CANTIDAD APROBADA</label>
+          <label for="cantidad" class="label_global">CANTIDAD APROBADA<em class="text-magenta-300">*</em></label>
           <input type="text" id="cantidad" class="input_global" placeholder="CANTIDAD APROBADA" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="linea" class="label_global">LINEAS APROBADAS</label>
+          <label for="linea" class="label_global">LINEAS APROBADAS<em class="text-magenta-300">*</em></label>
           <input type="text" id="linea" class="input_global" placeholder="LINEAS APROBADAS" required>
         </div>
         <div class="md:col-span-6 col-span-12">
           <fieldset class="flex h-full">
-            <legend class="label_global">BOTIQUIN</legend>
+            <legend class="label_global">BOTIQUIN<em class="text-magenta-300">*</em></legend>
             <div class="flex items-center ml-4">
               <input id="botiquin-1" type="radio" name="botiquin-1" value="no"
                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
@@ -94,13 +93,22 @@
             </div>
           </fieldset>
         </div>
+
+        <!--button-->
         <div class="col-span-12 flex justify-end mt-10">
-          <div class="w-40">
+          <div class="w-40 mx-2">
             <button class="btn_secondary_global">
               Crear
             </button>
           </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global" routerLink="/crear-bolsa">
+              Cancelar
+            </button>
+          </div>
         </div>
+        <!--end button-->
+
       </div>
     </div>
   </div>

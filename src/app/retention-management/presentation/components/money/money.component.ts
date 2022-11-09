@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./money.component.scss']
 })
 export class MoneyComponent implements OnInit {
-  isMenu = false;
+  isMenu = true;
 
   constructor() { }
 

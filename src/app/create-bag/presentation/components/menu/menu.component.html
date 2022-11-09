@@ -1,10 +1,10 @@
 <div class="grid grid-flow-row-dense md:grid-cols-2 md:grid-rows-2 md:p-10 gap-7 grid-cols-1 grid-rows-4 p-5">
-  <div *ngFor="let item of opciones" class="shadow-lg rounded-xl h-72 flex flex-col items-center justify-end md:m-8" [routerLink]="[item.ruta]">
+  <div *ngFor="let item of options" class="cursor-pointer shadow-lg rounded-xl h-72 flex flex-col items-center justify-end md:m-8" [routerLink]="[item.route]">
     <div class="h-full w-full  rounded-tl-xl rounded-tr-xl flex items-center justify-center">
-      <app-svg-importer classes="fill-blue-300 md:w-24 md:h-24 w-16 h-16" [iconName]="item.icono"></app-svg-importer>
+      <app-svg-importer classes="fill-blue-300 md:w-24 md:h-24 w-16 h-16" [iconName]="item.icon"></app-svg-importer>
     </div>
     <div class="bg-blue-300 w-full shadow-lg rounded-bl-xl rounded-br-xl h-1/3 flex items-center justify-center">
-      <h2 class="text-white text-xl font-bold">{{item.nombre | titlecase}}</h2>
+      <h2 class="text-white text-xl font-bold">{{item.name | titlecase}}</h2>
     </div>
   </div>
 </div>

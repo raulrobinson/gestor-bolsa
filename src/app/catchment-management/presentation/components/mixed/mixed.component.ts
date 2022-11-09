@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-catchment-management-money',
-  templateUrl: './money.component.html',
-  styleUrls: ['./money.component.scss']
+  selector: 'app-catchment-management-mixed',
+  templateUrl: './mixed.component.html',
+  styleUrls: ['./mixed.component.scss']
 })
-export class MoneyComponent implements OnInit {
+export class MixedComponent implements OnInit {
   isMenu = true;
 
   constructor() { }

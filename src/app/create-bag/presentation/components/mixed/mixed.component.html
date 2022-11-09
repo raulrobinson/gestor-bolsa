@@ -3,29 +3,31 @@
     <div class="px-4 py-5 sm:p-6">
       <div class="grid grid-cols-12 gap-5">
         <div class="md:col-span-6 col-span-12">
-          <label for="id_princing" class="label_global">ID PRINCING:</label>
+          <label for="id_princing" class="label_global">ID PRINCING<em class="text-magenta-300">*</em></label>
           <input type="text" id="id_princing" class="input_global" placeholder="ID PRINCING" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="segmento" class="label_global">SEGMENTO:</label>
+          <label for="segmento" class="label_global">SEGMENTO<em class="text-magenta-300">*</em></label>
           <select id="segmento" name="country" autocomplete="country-name"
                   class="input_global">
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option value="0">Seleccione segmento</option>
+            <option>Pymes</option>
+            <option>Corporaciones</option>
+            <option>Empresas</option>
           </select>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="holding" class="label_global">HOLDING:</label>
+          <label for="holding" class="label_global">HOLDING<em class="text-magenta-300">*</em></label>
           <select id="holding" name="country" autocomplete="country-name" class="input_global">
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option>Selecione Holding</option>
+            <option>Holding I</option>
+            <option>Holding II</option>
           </select>
         </div>
         <div class="md:col-span-6 col-span-12">
           <fieldset class="flex h-full">
-            <legend class="label_global">ORIGEN</legend>
+            <legend class="label_global">ORIGEN<em class="text-magenta-300">*</em></legend>
+
             <div class="flex items-center ml-4 ">
               <input id="origen-option-1" type="radio" name="origen" value="captacion"
                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
@@ -45,70 +47,52 @@
           </fieldset>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS</label>
+          <label for="consecutivo" class="label_global">CONSECUTIVO E-BUSINESS<em class="text-magenta-300">*</em></label>
           <input type="text" id="consecutivo" class="input_global" placeholder="CONSECUTIVO E-BUSINESS" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="identification" class="label_global">IDENTIFICACIÓN:</label>
+          <label for="identification" class="label_global">IDENTIFICACIÓN<em class="text-magenta-300">*</em></label>
           <input type="text" id="identification"
                  class="input_global"
                  placeholder="IDENTIFICACIÓN" required>
         </div>
         <div class="md:col-span-3 col-span-12">
-          <label for="identification" class="label_global">FECHA FIN:</label>
+          <label for="identification" class="label_global">FECHA FIN<em class="text-magenta-300">*</em></label>
           <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
         </div>
         <div class="md:col-span-3 col-span-12">
-          <label for="identification" class="label_global">FECHA FIN:</label>
+          <label for="identification" class="label_global">FECHA FIN<em class="text-magenta-300">*</em></label>
           <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="vigencia" class="label_global">VIGENCIA</label>
+          <label for="vigencia" class="label_global">VIGENCIA<em class="text-magenta-300">*</em></label>
           <input type="text" id="vigencia" class="input_global" placeholder="VIGENCIA" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="cantidad_ap" class="label_global">CANTIDAD APROBADA</label>
+          <label for="cantidad_ap" class="label_global">CANTIDAD APROBADA<em class="text-magenta-300">*</em></label>
           <input type="text" id="cantidad_ap" class="input_global" placeholder="CANTIDAD APROBADA" required>
         </div>
         <div class="md:col-span-6 col-span-12">
-          <label for="linea" class="label_global">LINEAS APROBADAS</label>
+          <label for="linea" class="label_global">LINEAS APROBADAS<em class="text-magenta-300">*</em></label>
           <input type="text" id="linea" class="input_global" placeholder="LINEAS APROBADAS" required>
-        </div>
-        <div class="md:col-span-6 col-span-12">
-          <fieldset class="flex h-full">
-            <legend class="label_global">BOTIQUIN</legend>
-            <div class="flex items-center ml-4">
-              <input id="botiquin-1" type="radio" name="botiquin-1" value="no"
-                     class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"
-                     checked>
-              <label for="botiquin-1" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                NO
-              </label>
-            </div>
-            <div class="flex items-center ml-4">
-              <input id="botiquin-2" type="radio" name="botiquin-1" value="si"
-                     class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
-              <label for="botiquin-2" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                SI
-              </label>
-            </div>
-          </fieldset>
         </div>
         <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700 col-span-12">
         <!-- Table -->
-        <div class="bg-white shadow-lg rounded-lg border border-gray-200 col-span-12">
-          <div class="w-full px-5 border-b border-gray-100 py-3">
+        <div class="shadow-sm rounded-lg border border-gray-200 col-span-12 py-2">
+          <div class="w-full px-5 border-b border-gray-100 pb-3">
             <div class="w-full flex justify-end my-1">
               <div class="w-full md:w-2/3 flex justify-around">
 
                 <div class="w-full md:w-1/3">
-                  <label for="equipo" class="label_global">EQUIPO:</label>
-                  <select id="equipo" name="equipo"
-                          class="input_global">
-                    <option disabled value="0">Seleccione un Equipo</option>
-                    <option>Canada</option>
-                    <option>Mexico</option>
-                  </select>
+                  <label class="label_global">EQUIPO:</label>
+                    <div class="relative">
+                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                      </div>
+                      <input type="search" id="search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Equipo">
+                      <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-300 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    </div>
+
                 </div>
 
                 <div class="w-full md:w-1/3">
@@ -128,46 +112,50 @@
           </div>
           <div class="p-3">
             <div class="overflow-x-auto">
-              <table class="table-auto w-full">
-                <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+              <table class="w-full text-sm text-left text-blue-600 dark:text-blue-300">
+                <caption></caption>
+                <thead class="text-xs text-blue-600 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-300 border-b">
                 <tr>
-                  <th class="p-2 whitespace-nowrap">
-                    <div class="font-semibold text-left">Equipos</div>
+                  <th scope="col" class="py-3 px-6  border-r">
+                    EQUIPOS
                   </th>
-                  <th class="p-2 whitespace-nowrap">
-                    <div class="font-semibold text-left">Cantidad</div>
+                  <th scope="col" class="py-3 px-6  border-r">
+                    CANTIDAD
                   </th>
-                  <th class="p-2 whitespace-nowrap">
-                    <div class="font-semibold text-left">Acciones</div>
+
+                  <th scope="col" class="py-3 px-6">
+                    ACCIONES
                   </th>
                 </tr>
                 </thead>
-                <tbody class="text-sm divide-y divide-gray-100">
-                <tr>
-                  <td class="p-2 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="label_global text-left">Alex Shatov</div>
-                    </div>
+                <tbody>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                  <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r">
+                    Apple MacBook Pro 17"
                   </td>
-                  <td class="p-2 whitespace-nowrap">
-                    <div class="text-left">0</div>
+                  <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white border-r">
+                    12
                   </td>
-                  <td class="p-2">
-                    <div class="grid grid-cols-2 items-end w-full md:w-auto justify-end">
-                      <div class="col-span-1">
-                        <div class="h-1/2 w-1/2 col-span-1">
-                          <button class="btn_secondary_global px-3 py-0 text-xl">
-                            +
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col-span-1">
-                        <div class="h-1/2 w-1/2 flex items-center">
-                          <button class="btn_delete_global  px-3 py-0 text-xl">
-                            -
-                          </button>
-                        </div>
-                      </div>
+                  <td class="py-4 ">
+                    <div class="flex justify-end ">
+                      <button class="btn_secondary_global mx-2 flex justify-center hover:fill-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" class="fill-blue-300 w-5">
+                          <path
+                            d="M400.9 752.3c-229.7 0-351.2-121.4-351.2-351.2 0-229.8 121.4-351.3 351.2-351.3 112.1 0 199 29 258.4 86.3 61.6 59.4 92.9 148.6 92.9 265 .1 229.7-121.4 351.2-351.3 351.2zm0-682.5c-219.7 0-331.2 111.5-331.2 331.3 0 219.7 111.4 331.2 331.2 331.2 219.9 0 331.3-111.4 331.3-331.2.1-219.9-111.4-331.3-331.3-331.3z"
+                          />
+                          <path
+                            d="M348 555.8c-3 0-5.8-1.4-7.5-3.7l-92.3-120.6c-3.2-4.2-2.4-10.1 1.8-13.3 4.2-3.2 10.1-2.4 13.3 1.8L348 530.7l211.7-273.5c3.2-4.1 9.2-4.9 13.3-1.7 4.1 3.2 4.9 9.2 1.7 13.3L355.5 552.1c-1.8 2.3-4.6 3.7-7.5 3.7z"
+                          />
+                        </svg>
+
+                      </button>
+                      <button class="btn_delete_global mx-2 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 702.8 702.8" class="fill-magenta-300 w-5 ">
+                          <path  fill-rule="evenodd"
+                                 d="M598.8 591.1V178.9H104.3v412.8c0 1.5-2 36.5 20.1 59.6 13.8 14.6 34.5 22.2 61.4 22.2h330.5c1.2 0 37.1 1.2 60.8-21.9 14.4-13.7 21.7-34.2 21.7-60.5zM216.6 76.4v73.3h270V76.6c0-1.2 1.2-23.4-11.4-36.8-6.7-7.3-16.4-10.5-29.5-10.5H256.6c-1.5 0-16.7-1.2-27.5 8.8-8.5 7.6-12.6 20.4-12.5 38.3zm471.6 73.3c8.1.5 14.2 7.5 13.7 15.5-.5 7.4-6.3 13.2-13.7 13.7H628v412.2c0 34.8-10.5 62.3-31 81.8-28.9 28.1-69 29.8-78.9 29.8H185.9c-35.7 0-63.4-10.5-83-31.6-30.7-32.7-27.8-78.6-27.8-80.4V178.9H14.6C6.5 178.4.4 171.4.9 163.4c.5-7.4 6.3-13.2 13.7-13.7h172.7V76.4c0-26.6 7.3-46.8 22.2-60.2C230.3-2.2 256.9.1 258 .1h187.6c21.6 0 38.6 6.7 50.9 19.9 21.3 22.8 19.3 56.4 19.3 57.8v71.9h172.4zM276.6 553.3c-8.1 0-14.6-6.5-14.6-14.6V314.1c.5-8.1 7.5-14.2 15.5-13.7 7.4.5 13.2 6.3 13.7 13.7v224.6c0 8.1-6.5 14.6-14.6 14.6zm149.7 0c-8.1 0-14.6-6.5-14.6-14.6V314.1c.5-8.1 7.5-14.2 15.5-13.7 7.4.5 13.2 6.3 13.7 13.7v224.6c0 8.1-6.5 14.6-14.6 14.6z"
+                                 clip-rule="evenodd" />
+                        </svg>
+                      </button>
                     </div>
                   </td>
                 </tr>
@@ -179,13 +167,18 @@
         <!--end table-->
         <!--button-->
         <div class="col-span-12 flex justify-end mt-10">
-          <div class="w-40">
+          <div class="w-40 mx-2">
             <button class="btn_secondary_global">
               Crear
             </button>
           </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global" routerLink="/crear-bolsa">
+              Cancelar
+            </button>
+          </div>
         </div>
-        <!--        end button-->
+        <!--end button-->
       </div>
     </div>
   </div>

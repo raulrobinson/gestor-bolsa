@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MenuItemModel} from "../../../../global/domain/models/MenuItemModel";
 
 @Component({
   selector: 'app-retention-management-menu',
@@ -7,9 +8,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  options!: MenuItemModel[];
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    this.menu();
+  }
+
+  private menu() {
+    this.options = [
+      {
+        name: "Gestion Retención Dinero",
+        icon: "movistar-icon",
+        route: "retencion-dinero"
+      },
+      {
+        name: "Gestion Retención Equipo",
+        icon: "movistar-icon",
+        route: "retencion-equipo"
+      },
+      {
+        name: "Gestion Retención Mixta",
+        icon: "movistar-icon",
+        route: "retencion-mixta"
+      },
+      {
+        name: "Gestion Retención Masiva",
+        icon: "movistar-icon",
+        route: "retencion-masiva"
+      }
+    ]
+  }
 }

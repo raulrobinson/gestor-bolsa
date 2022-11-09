@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItemModel } from '../../../../global/domain/models/MenuItemModel';
+import {Component, OnInit} from '@angular/core';
+import {MenuItemModel} from '../../../../global/domain/models/MenuItemModel';
 
 @Component({
   selector: 'app-catchment-management-menu',
@@ -8,21 +8,27 @@ import { MenuItemModel } from '../../../../global/domain/models/MenuItemModel';
 })
 export class MenuComponent implements OnInit {
 
-  opciones!:MenuItemModel[];
+  opciones!: MenuItemModel[];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.opciones=[
+    this.opciones = [
       {
-        nombre:"Gestion Captación Dinero",
-        icono:"movistar-icon",
-        ruta:"/gestion-captacion/captacion-dinero"
+        name: "Gestion Captación Dinero",
+        icon: "movistar-icon",
+        route: "/gestion-captacion/captacion-dinero"
       },
       {
-        nombre:"Gestion Captación Equipo",
-        icono:"movistar-icon",
-        ruta:"/gestion-captacion/captacion-equipo"
+        name: "Gestion Captación Equipo",
+        icon: "movistar-icon",
+        route: "/gestion-captacion/captacion-equipo"
+      },
+      {
+        name: "Gestion Captación Mixta",
+        icon: "movistar-icon",
+        route: "/gestion-captacion/captacion-mixta"
       }
     ]
   }

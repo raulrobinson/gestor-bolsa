@@ -1,6 +1,5 @@
 export interface MenuItemModel {
-
-  ruta:string;
-  icono:string;
-  nombre:string;
+  route:string;
+  icon:string;
+  name:string;
 }

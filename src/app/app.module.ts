@@ -10,6 +10,7 @@ import {GlobalModule} from './global/global.module';
 import {CreateBagModule} from "./create-bag/create-bag.module";
 import {CatchmentManagementModule} from "./catchment-management/catchment-management.module";
 import {RetentionManagementModule} from "./retention-management/retention-management.module";
+import {ApprovalBagModule} from "./approval-bag/approval-bag.module";
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {RetentionManagementModule} from "./retention-management/retention-manage
     GlobalModule,
     CreateBagModule,
     CatchmentManagementModule,
-    RetentionManagementModule
+    RetentionManagementModule,
+    ApprovalBagModule
   ],
   providers: [],
   bootstrap: [AppComponent]

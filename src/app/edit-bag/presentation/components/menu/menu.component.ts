@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItemModel } from '../../../../global/domain/models/MenuItemModel';
+import { MenuItemModel } from 'src/app/global/domain/models/MenuItemModel';
 
 @Component({
-  selector: 'app-approval-bag-menu',
+  selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
@@ -15,15 +15,15 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.opciones=[
       {
-        nombre:"Aprobar prórroga",
+        nombre:"Solicitud de prórroga",
         icono:"movistar-icon",
-        ruta:"/aprobacion-bolsa/aprobar-prorroga"
+        ruta:"/editar-bolsa/solicitud-prorroga"
       },
-      // {
-      //   nombre:"Aprobar bolsa",
-      //   icono:"movistar-icon",
-      //   ruta:"/gestion-captacion/captacion-mixta"
-      // }
+      {
+        nombre:"Edición de bolsa",
+        icono:"movistar-icon",
+        ruta:"/editar-bolsa/edicion-bolsa"
+      }
     ]
   }
 

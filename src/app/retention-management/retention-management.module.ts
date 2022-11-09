@@ -4,6 +4,7 @@ import { MenuComponent } from './presentation/components/menu/menu.component';
 import { EquipmentComponent } from './presentation/components/equipment/equipment.component';
 import { MoneyComponent } from './presentation/components/money/money.component';
 import { MassiveRetentionComponent } from './presentation/components/massive-retention/massive-retention.component';
+import { RetentionManagementRoutingModule } from './presentation/routing/retention-management-routing.module';
 
 
 
@@ -21,7 +22,8 @@ import { MassiveRetentionComponent } from './presentation/components/massive-ret
         MassiveRetentionComponent
     ],
   imports: [
-    CommonModule
+    CommonModule,
+    RetentionManagementRoutingModule
   ]
 })
 export class RetentionManagementModule { }

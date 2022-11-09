@@ -4,6 +4,7 @@ import { MenuComponent } from './presentation/components/menu/menu.component';
 import { MoneyComponent } from './presentation/components/money/money.component';
 import { EquipmentComponent } from './presentation/components/equipment/equipment.component';
 import { CatchmentManagementRoutingModule } from './presentation/routing/catchment-management-routing.module';
+import { SvgImporterComponent } from '../global/presentation/components/svg-importer/svg-importer.component';
 
 
 
@@ -19,7 +20,8 @@ import { CatchmentManagementRoutingModule } from './presentation/routing/catchme
   ],
   imports: [
     CommonModule,
-    CatchmentManagementRoutingModule
+    CatchmentManagementRoutingModule,
+    SvgImporterComponent
   ]
 })
 export class CatchmentManagementModule { }

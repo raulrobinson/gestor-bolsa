@@ -5,6 +5,7 @@ import { MoneyComponent } from './presentation/components/money/money.component'
 import { EquipmentComponent } from './presentation/components/equipment/equipment.component';
 import { MixedComponent } from './presentation/components/mixed/mixed.component';
 import { CreateBagRoutingModule } from './presentation/routing/create-bag-routing.module';
+import { SvgImporterComponent } from '../global/presentation/components/svg-importer/svg-importer.component';
 
 
 
@@ -23,7 +24,8 @@ import { CreateBagRoutingModule } from './presentation/routing/create-bag-routin
   ],
   imports: [
     CommonModule,
-    CreateBagRoutingModule
+    CreateBagRoutingModule,
+    SvgImporterComponent
   ]
 })
 export class CreateBagModule { }

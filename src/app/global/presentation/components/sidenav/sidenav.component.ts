@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItemModel } from '../../../domain/models/MenuItemModel';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,15 +8,46 @@ import { Component, OnInit } from '@angular/core';
 
 export class SidenavComponent implements OnInit {
 
-  opcionesMenu!: SideNavItemModel[];
+  opcionesMenu!: MenuItemModel[];
 
   constructor() {
     this.opcionesMenu=[
       {
-        isActive:false,
-        icon:"M12 4.5v15m7.5-7.5h-15",
-        label: "Completo"
-      }
+        icono:"agregar-icon",
+        nombre:"Creación De Bolsa",
+        ruta:"/crear-bolsa"
+      },
+      {
+        icono:"portapapeles-icon",
+        nombre:"Gestión Captación",
+        ruta:"/gestion-captacion"
+      },
+      {
+        icono:"escudo-icon",
+        nombre:"Gestión Retención",
+        ruta:"/gestion-retencion"
+      },
+      {
+        icono:"editar-icon",
+        nombre:"Edición Bolsas",
+        ruta:"/editar-bolsa"
+      },
+      {
+        icono:"aprobacion-icon",
+        nombre:"Aprobacion Bolsas",
+        ruta:"/aprobacion-bolsa"
+      },
+      // {
+      //   icono:"eliminar-icon",
+      //   nombre:"Edición Bolsas",
+      //   ruta:"/editar-bolsa"
+      // },
+      // {
+      //   icono:"reportes-icon",
+      //   nombre:"Edición Bolsas",
+      //   ruta:"/editar-bolsa"
+      // }
+
     ]
   }
 
@@ -24,10 +56,3 @@ export class SidenavComponent implements OnInit {
 
 }
 
-interface SideNavItemModel {
-
-  label: string,
-  icon: string,
-  isActive: boolean;
-
-}

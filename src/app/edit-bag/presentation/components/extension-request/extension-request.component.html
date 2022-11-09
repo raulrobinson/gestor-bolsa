@@ -1,0 +1,46 @@
+<form action="#" method="POST">
+  <div class="overflow-hidden sm:rounded-md">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="grid grid-cols-12 gap-5">
+
+        <div class="md:col-span-8 col-span-8">
+          <label for="bolsa_prorroga" class="label_global">SELECCIONE LA BOLSA PARA SOLICITAR LA PRORROGA:</label>
+          <input type="text" id="bolsa_prorroga" class="input_global" placeholder="Bolsa para solicitar prórroga">
+        </div>
+        <div class="md:col-span-4 col-span-4 flex justify-center items-end">
+          <div class="w-40 mx-2">
+            <button class="btn_secondary_global">
+              Buscar
+            </button>
+          </div>
+        </div>
+        <div class="md:col-span-6 col-span-12">
+          <label for="fecha_fin_aprobada" class="label_global">FECHA FIN APROBADA:</label>
+          <input disabled type="date" class="input_disable_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+        <div class="md:col-span-6 col-span-12">
+          <label for="fecha_fin_actual" class="label_global">FECHA FIN ACTUAL:</label>
+          <input disabled type="date" class="input_disable_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+        <div class="md:col-span-6 col-span-12">
+          <label for="fecha_de_solicitud" class="label_global">FECHA DE SOLICITUD:</label>
+          <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+        <!--button-->
+        <div class="col-span-12 flex justify-end mt-10">
+          <div class="w-40 mx-2">
+            <button class="btn_secondary_global">
+              Gestionar
+            </button>
+          </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global">
+              Cancelar
+            </button>
+          </div>
+        </div>
+        <!--end button-->
+      </div>
+    </div>
+  </div>
+</form>

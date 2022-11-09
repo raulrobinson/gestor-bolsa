@@ -4,11 +4,11 @@ import { SidenavComponent } from './presentation/components/sidenav/sidenav.comp
 import { HeaderComponent } from './presentation/components/header/header.component';
 import { ContainerComponent } from './presentation/components/container/container.component';
 import { FooterComponent } from './presentation/components/footer/footer.component';
-import { SidenavItemMenuComponent } from './presentation/components/sidenav-item-menu/sidenav-item-menu.component';
 import { NotFoundComponent } from './presentation/components/not-found/not-found.component';
 import { ForbiddenComponent } from './presentation/components/forbidden/forbidden.component';
 import { WelcomeComponent } from './presentation/components/welcome/welcome.component';
 import { GlobalRoutingModule } from './presentation/routing/global-routing.module';
+import { SvgImporterComponent } from './presentation/components/svg-importer/svg-importer.component';
 
 
 @NgModule({
@@ -17,7 +17,6 @@ import { GlobalRoutingModule } from './presentation/routing/global-routing.modul
     HeaderComponent,
     ContainerComponent,
     FooterComponent,
-    SidenavItemMenuComponent,
     NotFoundComponent,
     ForbiddenComponent,
     WelcomeComponent,
@@ -30,7 +29,8 @@ import { GlobalRoutingModule } from './presentation/routing/global-routing.modul
   ],
   imports: [
     CommonModule,
-    GlobalRoutingModule
+    GlobalRoutingModule,
+    SvgImporterComponent
   ]
 })
 export class GlobalModule { }

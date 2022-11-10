@@ -1,0 +1,66 @@
+<div class="overflow-hidden sm:rounded-md" *ngIf="isDeleteMenu">
+  <div class="px-4 py-5 sm:p-6">
+    <div class="grid grid-cols-12 gap-5">
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="bolsa" class="label_global">TIPO DE BOLSA <em class="text-magenta-300">*</em></label>
+        <select id="bolsa" name="country" autocomplete="bolsa-name" class="input_global">
+          <option value="0">Seleccione la Bolsa a Gestionar</option>
+          <option>Bolsa a Dinero</option>
+          <option>Bolsa a Equipo</option>
+          <option>Bolsa a Mixta</option>
+        </select>
+      </div>
+
+      <!--button-->
+      <div class="col-span-12 md:col-span-6 flex justify-start pt-5 pb-0">
+        <div class="w-40">
+          <button class="btn_secondary_global" (click)="showMenu()">
+            Buscar
+          </button>
+        </div>
+      </div>
+      <!-- end button-->
+    </div>
+  </div>
+</div>
+
+<form action="#" method="POST" *ngIf="!isDeleteMenu">
+  <div class="overflow-hidden sm:rounded-md">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="grid grid-cols-12 gap-5">
+
+        <!--        disable buttons-->
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="bolsa_gestion" class="label_global">TIPO DE BOLSA:</label>
+          <input type="text" id="bolsa_gestion" class="input_disable_global" placeholder="Bolsa a Gestionar" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">BOLSA A ELIMINAR<em class="text-magenta-300">*</em></label>
+          <select name="country" autocomplete="bolsa-name" class="input_global">
+            <option value="0">Seleccione la Bolsa a Gestionar</option>
+            <option>Bolsa 123456</option>
+          </select>
+        </div>
+
+        <!--button-->
+        <div class="col-span-12 flex justify-end mt-10">
+          <div class="w-40 mx-2">
+            <button class="btn_secondary_global">
+              Eliminar
+            </button>
+          </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global" routerLink="/eliminar-bolsa">
+              Cancelar
+            </button>
+          </div>
+        </div>
+        <!--end button-->
+
+      </div>
+    </div>
+  </div>
+</form>

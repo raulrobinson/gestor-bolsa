@@ -1,0 +1,100 @@
+<div class="overflow-hidden sm:rounded-md" *ngIf="isMenu">
+  <div class="px-4 py-5 sm:p-6">
+    <div class="grid grid-cols-12 gap-5">
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="bolsa" class="label_global">TIPO DE BOLSA<em class="text-magenta-300">*</em></label>
+        <select id="bolsa" autocomplete="bolsa-name" class="input_global">
+          <option value="0">Seleccione tipo Bolsa</option>
+        </select>
+      </div>
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="tipo_gestion_select" class="label_global">ID PRINCING<em class="text-magenta-300">*</em></label>
+        <select id="tipo_gestion_select" name="country" autocomplete="country-name" class="input_global">
+          <option value="0">Seleccione ID Princing</option>
+        </select>
+      </div>
+      <!--button-->
+      <div class="col-span-12 flex justify-end mt-10">
+        <div class="w-40">
+          <button class="btn_secondary_global" (click)="showMenu()">
+            Siguiente
+          </button>
+        </div>
+      </div>
+      <!-- end button-->
+    </div>
+  </div>
+</div>
+
+<form action="#" method="POST" *ngIf="!isMenu">
+  <div class="overflow-hidden sm:rounded-md">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="grid grid-cols-12 gap-5">
+
+        <!--        disable buttons-->
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="bolsa_gestion" class="label_global">TIPO DE BOLSA:</label>
+          <input type="text" id="bolsa_gestion" class="input_disable_global" placeholder="TIPO DE BOLSA" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="tipo_gestion" class="label_global">ID PRINCING:</label>
+          <input type="text" id="tipo_gestion" class="input_disable_global" placeholder="ID PRINCING" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="holding" class="label_global">HOLDING:</label>
+          <input type="text" id="holding" class="input_disable_global" placeholder="Holding" disabled>
+        </div>
+
+        <div class="md:col-span-3 col-span-6">
+          <label for="equipos_aprobado" class="label_global">FECHA INICIO:</label>
+          <input type="text" id="equipos_aprobado" class="input_disable_global" placeholder="dd/mm/aaaa" disabled>
+        </div>
+
+        <div class="md:col-span-3 col-span-6">
+          <label for="monto_disponible" class="label_global">FECHA FIN:</label>
+          <input type="text" id="monto_disponible" class="input_disable_global" placeholder="dd/mm/aaaa" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="segmento" class="label_global">SEGMENTO:</label>
+          <input type="text" id="segmento" class="input_disable_global" placeholder="Segmento" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">MONTO APROBADO:</label>
+          <input type="text" class="input_disable_global" placeholder="Monto Aprobado" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">EMPRESA ASOCIADA:</label>
+          <input type="text" class="input_disable_global" placeholder="EMPRESA ASOCIADA" disabled>
+        </div>
+
+
+        <!--        end disable buttons-->
+
+        <!--button-->
+        <div class="col-span-12 flex justify-end mt-10">
+          <div class="w-40 mx-2">
+            <button class="btn_secondary_global">
+              Aprobar
+            </button>
+          </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global">
+              Rechazar
+            </button>
+          </div>
+        </div>
+        <!--end button-->
+
+      </div>
+    </div>
+  </div>
+</form>
+

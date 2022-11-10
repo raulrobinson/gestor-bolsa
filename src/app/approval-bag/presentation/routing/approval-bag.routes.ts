@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { ApprovalExtensionComponent as ApprovalBagApprovalExtensionComponent} from '../components/approval-extension/approval-extension.component';
 import { MenuComponent as ApprovalBagMenuComponent} from '../components/menu/menu.component';
+import { ApproveComponent as ApprovalCreateBagComponent} from "../components/approve/approve.component";
 
 export const ApprovalBagRoutes: Routes = [
   {
@@ -11,9 +12,9 @@ export const ApprovalBagRoutes: Routes = [
   {
     path: "aprobar-prorroga",
     component: ApprovalBagApprovalExtensionComponent
-  }
-  // {
-  //   path: "aprobar-bolsa",
-  //   component: CreateBagMoneyComponent
-  // },
+  },
+  {
+    path: "aprobacion-creacion",
+    component: ApprovalCreateBagComponent
+  },
 ];

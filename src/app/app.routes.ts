@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 
 export const AppRoutes: Routes = [
 
@@ -17,6 +17,10 @@ export const AppRoutes: Routes = [
   {
     path: "gestion-retencion",
     loadChildren: () => import('./retention-management/retention-management.module').then(m => m.RetentionManagementModule)
+  },
+  {
+    path: "eliminar-bolsa",
+    loadChildren: () => import('./delete-bag/delete-bag.module').then(m => m.DeleteBagModule)
   },
   {
     path: "aprobacion-bolsa",

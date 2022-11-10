@@ -33,19 +33,19 @@ export class SidenavComponent implements OnInit {
         route:"/editar-bolsa"
       },
       {
+        icon:"eliminar-icon",
+        name:"Eliminar Bolsas",
+        route:"/eliminar-bolsa"
+      },
+      {
         icon:"aprobacion-icon",
         name:"Aprobacion Bolsas",
         route:"/aprobacion-bolsa"
       },
       // {
-      //   icon:"eliminar-icon",
-      //   name:"Edición Bolsas",
-      //   route:"/editar-bolsa"
-      // },
-      // {
-      //   icon:"reportes-icon",
-      //   name:"Edición Bolsas",
-      //   route:"/editar-bolsa"
+      //   icono:"reportes-icon",
+      //   nombre:"Edición Bolsas",
+      //   ruta:"/editar-bolsa"
       // }
 
     ]

@@ -15,15 +15,15 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.opciones=[
       {
-        name:"Aprobar prórroga",
+        name:"Aprobación Creación",
+        icon:"movistar-icon",
+        route:"/aprobacion-bolsa/aprobacion-creacion"
+      },
+      {
+        name:"Aprobación prórroga",
         icon:"movistar-icon",
         route:"/aprobacion-bolsa/aprobar-prorroga"
-      },
-      // {
-      //   nombre:"Aprobar bolsa",
-      //   icono:"movistar-icon",
-      //   ruta:"/gestion-captacion/captacion-mixta"
-      // }
+      }
     ]
   }
 

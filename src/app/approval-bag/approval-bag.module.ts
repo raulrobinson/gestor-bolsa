@@ -4,13 +4,15 @@ import { ApprovalExtensionComponent } from './presentation/components/approval-e
 import { MenuComponent } from './presentation/components/menu/menu.component';
 import { SvgImporterComponent } from '../global/presentation/components/svg-importer/svg-importer.component';
 import { ApprovalBagRoutingModule } from './presentation/routing/approval-bag-routing.module';
+import { ApproveComponent } from './presentation/components/approve/approve.component';
 
 
 
 @NgModule({
   declarations: [
     ApprovalExtensionComponent,
-    MenuComponent
+    MenuComponent,
+    ApproveComponent
   ],
   exports: [
     ApprovalExtensionComponent,

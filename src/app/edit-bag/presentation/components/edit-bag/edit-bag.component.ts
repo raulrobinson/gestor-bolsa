@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-bag.component.scss']
 })
 export class EditBagComponent implements OnInit {
+  isMenu= false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  showMenu() {
+    this.isMenu = false;
+  }
 }

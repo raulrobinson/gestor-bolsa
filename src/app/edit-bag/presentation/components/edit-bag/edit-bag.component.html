@@ -1,1 +1,113 @@
-<p>edit-bag works!</p>
+<div class="overflow-hidden sm:rounded-md" *ngIf="isMenu">
+  <div class="px-4 py-5 sm:p-6">
+    <div class="grid grid-cols-12 gap-5">
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="tipo_gestion_select" class="label_global">TIPO DE BOLSA<em class="text-magenta-300">*</em></label>
+        <select id="tipo_gestion_select" name="country" autocomplete="country-name" class="input_global">
+          <option value="0">Seleccione Tipo Bolsa</option>
+        </select>
+      </div>
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="bolsa" class="label_global">BOLSA A GESTIONAR<em class="text-magenta-300">*</em></label>
+        <select id="bolsa" name="country" autocomplete="bolsa-name" class="input_global">
+          <option value="0">Seleccione la Bolsa a Gestionar</option>
+        </select>
+      </div>
+
+      <!--button-->
+      <div class="col-span-12 flex justify-end mt-10">
+        <div class="w-40">
+          <button class="btn_secondary_global" (click)="showMenu()">
+            Siguiente
+          </button>
+        </div>
+      </div>
+      <!-- end button-->
+    </div>
+  </div>
+</div>
+
+<form action="#" method="POST" *ngIf="!isMenu">
+  <div class="overflow-hidden sm:rounded-md">
+    <div class="px-4 py-5 sm:p-6">
+      <div class="grid grid-cols-12 gap-5">
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="bolsa_gestion" class="label_global">BOLSA A GESTIONAR:</label>
+          <input type="text" id="bolsa_gestion" class="input_disable_global" placeholder="Bolsa a Gestionar" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="tipo_gestion" class="label_global">TIPO DE BOLSA:</label>
+          <input type="text" id="tipo_gestion" class="input_disable_global" placeholder="Tipo Gestión" disabled>
+        </div>
+
+        <hr class="my-2 h-px bg-gray-200 border-0 dark:bg-gray-700 col-span-12">
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="segmento" class="label_global">SEGMENTO ACTUAL:</label>
+          <input type="text" id="segmento" class="input_disable_global" placeholder="Segmento" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">SEGMENTO A EDITAR<em class="text-magenta-300">*</em></label>
+          <select name="select_equipo" class="input_global">
+            <option value="0">Seleccione Segmento</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label for="holding" class="label_global">HOLDING ACTUAL:</label>
+          <input type="text" id="holding" class="input_disable_global" placeholder="Holding" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">HOLDING A EDITAR<em class="text-magenta-300">*</em></label>
+          <select name="select_equipo" class="input_global">
+            <option value="0">Seleccione Holding</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">FECHA FIN ACTUAL:</label>
+          <input type="text"  class="input_disable_global" placeholder="dd/mm/aaaa" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">NUEVA FECHA FIN<em class="text-magenta-300">*</em></label>
+          <input type="date" class="input_global" placeholder="Select a date" data-mdb-toggle="datepicker"/>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">MONTO ACTUAL:</label>
+          <input type="text"  class="input_disable_global" placeholder="dd/mm/aaaa" disabled>
+        </div>
+
+        <div class="md:col-span-6 col-span-12">
+          <label class="label_global">MONTO A AGREGAR<em class="text-magenta-300">*</em></label>
+          <input type="text" class="input_global" placeholder="Ingrese Monto" />
+        </div>
+
+        <!--button-->
+        <div class="col-span-12 flex justify-end mt-10">
+          <div class="w-40 mx-2">
+            <button class="btn_secondary_global">
+              Editar
+            </button>
+          </div>
+          <div class="w-40 mx-2">
+            <button class="btn_delete_global" routerLink="/editar-bolsa">
+              Cancelar
+            </button>
+          </div>
+        </div>
+        <!--end button-->
+
+      </div>
+    </div>
+  </div>
+</form>
+
+

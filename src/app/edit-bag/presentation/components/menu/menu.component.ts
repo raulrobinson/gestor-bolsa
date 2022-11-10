@@ -15,11 +15,6 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.opciones=[
       {
-        name:"Solicitud de prórroga",
-        icon:"movistar-icon",
-        route:"/editar-bolsa/solicitud-prorroga"
-      },
-      {
         name:"Edición de bolsa",
         icon:"movistar-icon",
         route:"/editar-bolsa/edicion-bolsa"

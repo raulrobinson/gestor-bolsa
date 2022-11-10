@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import BreadCrumbItemModel from '../../../domain/models/breadcrumb-item.model';
+import { MenuItemModel } from '../../../domain/models/MenuItemModel';
 
 @Component({
   selector: 'app-header',
@@ -7,49 +7,52 @@ import BreadCrumbItemModel from '../../../domain/models/breadcrumb-item.model';
 })
 export class HeaderComponent implements OnInit {
 
-  historical!: BreadCrumbItemModel[];
+  opcionesMenu!: MenuItemModel[];
+  isOpen: boolean=false;
+
   constructor() {
-    this.historical=[
+    this.opcionesMenu=[
       {
-        indexPath: 0,
-        path: "Menú Gestor Bolsas",
-        isActive: false
+        icon:"agregar-icon",
+        name:"Creación De Bolsa",
+        route:"/crear-bolsa"
       },
       {
-        indexPath: 1,
-        path: "Creación De Bolsa",
-        isActive: false
+        icon:"portapapeles-icon",
+        name:"Gestión Captación",
+        route:"/gestion-captacion"
       },
       {
-        indexPath: 2,
-        path: "Bolsa Dinero",
-        isActive:true
-      }
+        icon:"escudo-icon",
+        name:"Gestión Retención",
+        route:"/gestion-retencion"
+      },
+      {
+        icon:"editar-icon",
+        name:"Edición Bolsas",
+        route:"/editar-bolsa"
+      },
+      {
+        icon:"aprobacion-icon",
+        name:"Aprobacion Bolsas",
+        route:"/aprobacion-bolsa"
+      },
+      // {
+      //   icono:"eliminar-icon",
+      //   nombre:"Edición Bolsas",
+      //   ruta:"/editar-bolsa"
+      // },
+      // {
+      //   icono:"reportes-icon",
+      //   nombre:"Edición Bolsas",
+      //   ruta:"/editar-bolsa"
+      // }
+
     ]
-
   }
-  changePath(goingToPath: string): void {
-
-
-    let indexFounded: number = this.historical.findIndex(element => element.path === goingToPath);
-
-    if (indexFounded === -1) {
-      this.historical.push({
-        indexPath: 0,
-        path: goingToPath,
-        isActive: true
-      })
-    } else {
-      this.historical = this.historical.filter((hm, index) => {
-        if (index <= indexFounded) {
-          return true;
-        }
-        return false;
-      })
-      this.historical[indexFounded].isActive=true;
-    }
+  handleMenu():void{
+    this.isOpen = !this.isOpen;
   }
-
   ngOnInit(): void {
 
   }

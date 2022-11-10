@@ -38,14 +38,14 @@ export class SidenavComponent implements OnInit {
         route:"/aprobacion-bolsa"
       },
       // {
-      //   icono:"eliminar-icon",
-      //   nombre:"Edición Bolsas",
-      //   ruta:"/editar-bolsa"
+      //   icon:"eliminar-icon",
+      //   name:"Edición Bolsas",
+      //   route:"/editar-bolsa"
       // },
       // {
-      //   icono:"reportes-icon",
-      //   nombre:"Edición Bolsas",
-      //   ruta:"/editar-bolsa"
+      //   icon:"reportes-icon",
+      //   name:"Edición Bolsas",
+      //   route:"/editar-bolsa"
       // }
 
     ]

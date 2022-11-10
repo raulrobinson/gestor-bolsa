@@ -9,6 +9,7 @@ import { ForbiddenComponent } from './presentation/components/forbidden/forbidde
 import { WelcomeComponent } from './presentation/components/welcome/welcome.component';
 import { GlobalRoutingModule } from './presentation/routing/global-routing.module';
 import { SvgImporterComponent } from './presentation/components/svg-importer/svg-importer.component';
+import { BreadcrumbComponent } from './presentation/components/breadcrumb/breadcrumb.component';
 
 
 @NgModule({
@@ -20,12 +21,14 @@ import { SvgImporterComponent } from './presentation/components/svg-importer/svg
     NotFoundComponent,
     ForbiddenComponent,
     WelcomeComponent,
+    BreadcrumbComponent,
   ],
   exports: [
     SidenavComponent,
     HeaderComponent,
     ContainerComponent,
     FooterComponent,
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule,

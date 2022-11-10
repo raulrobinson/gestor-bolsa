@@ -6,6 +6,8 @@ export enum IconNamesEnum{
   ELIMINAR_ICON="eliminar-icon",
   APROBACION_ICON="aprobacion-icon",
   REPORTES_ICON="reportes-icon",
+  MENU_ICON="menu-icon",
+  CLOSE_ICON="close-icon",
   DEFAULT_ICON="default-icon",
   MOVISTAR_ICON="movistar-icon"
 }

@@ -5,7 +5,6 @@ import { IconNamesEnum } from '../../../domain/models/IconNamesEnum';
   standalone: true,
   selector: 'app-svg-importer',
   templateUrl: './svg-importer.component.html',
-  styleUrls: ['./svg-importer.component.scss']
 })
 export class SvgImporterComponent implements OnInit {
 
@@ -20,6 +19,8 @@ export class SvgImporterComponent implements OnInit {
   aprobacionIcon:boolean=false;
   reportesIcon:boolean=false;
   movistarIcon:boolean=false;
+  menuIcon:boolean=false;
+  closeIcon:boolean=false;
 
   defaultIcon:boolean=false;
 
@@ -77,6 +78,18 @@ export class SvgImporterComponent implements OnInit {
       this.movistarIcon=true;
     } else {
       this.movistarIcon=false;
+    }
+
+    if (this.iconName===IconNamesEnum.MENU_ICON) {
+      this.menuIcon=true;
+    } else {
+      this.menuIcon=false;
+    }
+
+    if (this.iconName===IconNamesEnum.CLOSE_ICON) {
+      this.closeIcon=true;
+    } else {
+      this.closeIcon=false;
     }
 
 

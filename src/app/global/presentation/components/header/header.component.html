@@ -1,19 +1,28 @@
-<nav class="w-full bg-currentColor h-12 flex items-center">
+<nav class="w-full bg-currentColor h-12 flex items-center md:hidden">
 
-  <nav class="flex bg-blue-50 text-secondaryColor py-1 rounded-lg h-full" aria-label="Breadcrumb">
-    <ol class="inline-flex items-center space-x-1 md:space-x-3 h-full">
+  <div class="flex text-secondaryColor py-1 rounded-lg h-full justify-between items-center w-full px-2">
 
-        <li class="flex items-center bg-white h-full rounded-tl-lg rounded-bl-lg rounded-tr-full rounded-br-full"  [class]="item.isActive?'bg-secondaryColor':'bg-white'" *ngFor="let item of historical" (click)="changePath(item.path)">
-          <a href="#" class="flex text-secondaryColor items-center px-4" [class]="item.isActive?'text-white':'text-secondaryColor'" >
-            {{item.path}}
-            <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </li>
-    </ol>
-  </nav>
+
+    <div class="w-auto h-full cursor-pointer">
+      <app-svg-importer classes="fill-blue-300 w-12 h-12" [iconName]="'movistar-icon'"></app-svg-importer>
+    </div>
+    <div class="w-auto h-full cursor-pointer" (click)="handleMenu()">
+      <app-svg-importer classes="fill-blue-300 w-10 h-10" [iconName]="'menu-icon'"></app-svg-importer>
+    </div>
+
+
+  </div>
 
 </nav>
+<div class="absolute top-0 left-0 bg-currentColor w-full h-screen flex flex-col" [class]="isOpen?'visible':'hidden'">
+  <button class="w-full h-12 flex items-center justify-end px-2 cursor-pointer">
+    <app-svg-importer (click)="handleMenu()" classes="fill-blue-300 w-10 h-10" [iconName]="'close-icon'"></app-svg-importer>
+  </button>
+  <div class="flex flex-col w-auto mx-auto pb-4">
+    <a (click)="handleMenu()" *ngFor="let item of opcionesMenu" class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-indigo-700"
+      [routerLink]="[item.route]">
+      <app-svg-importer classes="fill-blue-300 w-4 h-4" [iconName]="item.icon"></app-svg-importer>
+      <span class="ml-2 text-sm font-medium text-secondaryColor">{{item.name}}</span>
+    </a>
+  </div>
+</div>

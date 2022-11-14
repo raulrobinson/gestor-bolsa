@@ -33,15 +33,15 @@ export class HeaderComponent implements OnInit {
         route:"/editar-bolsa"
       },
       {
+        icon:"eliminar-icon",
+        name:"Eliminar Bolsas",
+        route:"/eliminar-bolsa"
+      },
+      {
         icon:"aprobacion-icon",
         name:"Aprobacion Bolsas",
         route:"/aprobacion-bolsa"
       },
-      // {
-      //   icono:"eliminar-icon",
-      //   nombre:"Edición Bolsas",
-      //   ruta:"/editar-bolsa"
-      // },
       // {
       //   icono:"reportes-icon",
       //   nombre:"Edición Bolsas",
@@ -52,6 +52,10 @@ export class HeaderComponent implements OnInit {
   }
   handleMenu():void{
     this.isOpen = !this.isOpen;
+  }
+  activeOption(item:MenuItemModel){
+    this.opcionesMenu.forEach(it=>it.isActive=false);
+    item.isActive=true;
   }
   ngOnInit(): void {
 

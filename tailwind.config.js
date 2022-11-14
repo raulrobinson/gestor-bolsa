@@ -48,6 +48,7 @@ module.exports = {
       'regular':400,
     },
     extend: {},
+    important:true,
   },
   plugins: [],
 }

@@ -15,32 +15,38 @@ export class SidenavComponent implements OnInit {
       {
         icon:"agregar-icon",
         name:"Creación De Bolsa",
-        route:"/crear-bolsa"
+        route:"/crear-bolsa",
+        isActive:false
       },
       {
         icon:"portapapeles-icon",
         name:"Gestión Captación",
-        route:"/gestion-captacion"
+        route:"/gestion-captacion",
+        isActive:false
       },
       {
         icon:"escudo-icon",
         name:"Gestión Retención",
-        route:"/gestion-retencion"
+        route:"/gestion-retencion",
+        isActive:false
       },
       {
         icon:"editar-icon",
         name:"Edición Bolsas",
-        route:"/editar-bolsa"
+        route:"/editar-bolsa",
+        isActive:false
       },
       {
         icon:"eliminar-icon",
         name:"Eliminar Bolsas",
-        route:"/eliminar-bolsa"
+        route:"/eliminar-bolsa",
+        isActive:false
       },
       {
         icon:"aprobacion-icon",
         name:"Aprobacion Bolsas",
-        route:"/aprobacion-bolsa"
+        route:"/aprobacion-bolsa",
+        isActive:false
       },
       // {
       //   icono:"reportes-icon",
@@ -49,6 +55,10 @@ export class SidenavComponent implements OnInit {
       // }
 
     ]
+  }
+  activeOption(item:MenuItemModel){
+    this.opcionesMenu.forEach(it=>it.isActive=false);
+    item.isActive=true;
   }
 
   ngOnInit(): void {

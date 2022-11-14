@@ -14,15 +14,16 @@
   </div>
 
 </nav>
-<div class="absolute top-0 left-0 bg-currentColor w-full h-screen flex flex-col" [class]="isOpen?'visible':'hidden'">
+<div class="absolute top-0 left-0 bg-currentColor w-full h-screen flex flex-col md:hidden" [class]="isOpen?'visible':'hidden'">
   <button class="w-full h-12 flex items-center justify-end px-2 cursor-pointer">
     <app-svg-importer (click)="handleMenu()" classes="fill-blue-300 w-10 h-10" [iconName]="'close-icon'"></app-svg-importer>
   </button>
   <div class="flex flex-col w-auto mx-auto pb-4">
-    <a (click)="handleMenu()" *ngFor="let item of opcionesMenu" class="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-indigo-700"
-      [routerLink]="[item.route]">
-      <app-svg-importer classes="fill-blue-300 w-4 h-4" [iconName]="item.icon"></app-svg-importer>
-      <span class="ml-2 text-sm font-medium text-secondaryColor">{{item.name}}</span>
+    <a *ngFor="let item of opcionesMenu" (click)="handleMenu();" class="fill-blue-300 text-blue-300 hover:bg-gray-200 flex items-center w-full h-12 px-3 mt-2 rounded-xl hover:bg-indigo-700"
+    [routerLinkActive]="['bg-secondaryColor', '!text-white', '!fill-white']"
+    [routerLink]="[item.route]">
+      <app-svg-importer  classes="w-4 h-4" [iconName]="item.icon"></app-svg-importer>
+      <span class="ml-2 text-sm font-medium">{{item.name}}</span>
     </a>
   </div>
 </div>

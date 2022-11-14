@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import BreadCrumbItemModel from '../../../domain/models/breadcrumb-item.model';
+import { MenuItemModel } from 'src/app/global/domain/models/MenuItemModel';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -7,57 +9,43 @@ import BreadCrumbItemModel from '../../../domain/models/breadcrumb-item.model';
 })
 export class BreadcrumbComponent implements OnInit {
 
-  historical!: BreadCrumbItemModel[];
-  constructor() {
-    this.historical=[
-      {
-        indexPath: 0,
-        path: "Menú Gestor Bolsas",
-        isActive: false
-      },
-      {
-        indexPath: 1,
-        path: "Creación De Bolsa",
-        isActive: false
-      },
-      {
-        indexPath: 2,
-        path: "Bolsa Dinero",
-        isActive:false
-      },
-      // {
-      //   indexPath: 3,
-      //   path: "Bolsa Dinero",
-      //   isActive:true
-      // },
-      // {
-      //   indexPath: 4,
-      //   path: "Bolsa Dinero",
-      //   isActive:true
-      // }
-    ]
+  historical!: MenuItemModel[];
+  constructor(private _router: Router) {
+    _router.events
+      .pipe(filter(evt => evt instanceof NavigationEnd))
+      .subscribe((_val: any) => {
+        this.historical = [];
 
-  }
-  changePath(goingToPath: string): void {
+        let path: string = _val.urlAfterRedirects;
+        path = path.split("?")[0];
+
+        let paths: string[] = path.split("/");
+        paths.shift();
+
+        let el:string = "/";
+
+        for (let index = 0; index < paths.length; index++) {
 
 
-    let indexFounded: number = this.historical.findIndex(element => element.path === goingToPath);
+          el = el + paths[index]+"/";
 
-    if (indexFounded === -1) {
-      this.historical.push({
-        indexPath: 0,
-        path: goingToPath,
-        isActive: true
-      })
-    } else {
-      this.historical = this.historical.filter((hm, index) => {
-        if (index <= indexFounded) {
-          return true;
+
+          this.historical.push(
+
+            {
+              route: el,
+              icon: "",
+              name: paths[index].replace("-", " "),
+              isActive: false
+            }
+
+          )
         }
-        return false;
+
+        this.historical[this.historical.length-1].isActive=true;
+
+
       })
-      this.historical[indexFounded].isActive=true;
-    }
   }
 
   ngOnInit(): void {

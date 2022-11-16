@@ -1,0 +1,35 @@
+<div class="overflow-hidden sm:rounded-md">
+  <div class="px-4 py-5 sm:p-6">
+    <div class="grid grid-cols-12 gap-5">
+
+      <div class="md:col-span-6 col-span-12">
+        <label class="label_global">USUARIO DE RED<em class="text-magenta-300">*</em></label>
+        <input type="text" class="input_global" placeholder="NH" required>
+      </div>
+
+      <div class="md:col-span-6 col-span-12">
+        <label for="bolsa" class="label_global">TIPO DE BOLSA<em class="text-magenta-300">*</em></label>
+        <select id="bolsa" name="country" autocomplete="bolsa-name" class="input_global">
+          <option value="0">Seleccione la Bolsa a Gestionar</option>
+          <option>Dinero</option>
+          <option>Equipo</option>
+          <option>Mixta</option>
+        </select>
+      </div>
+
+      <div class="md:col-span-6 col-span-12">
+        <label class="label_global">ID PRINCING<em class="text-magenta-300">*</em></label>
+        <input type="text" class="input_global" placeholder="ID Princing" required>
+      </div>
+      <!--button-->
+      <div class="col-span-12 flex justify-end mt-10">
+        <div class="w-40">
+          <button class="btn_secondary_global" >
+            Buscar
+          </button>
+        </div>
+      </div>
+      <!-- end button-->
+    </div>
+  </div>
+</div>

@@ -6,6 +6,7 @@ import { EquipmentComponent } from './presentation/components/equipment/equipmen
 import { MixedComponent } from './presentation/components/mixed/mixed.component';
 import { CreateBagRoutingModule } from './presentation/routing/create-bag-routing.module';
 import { SvgImporterComponent } from '../global/presentation/components/svg-importer/svg-importer.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -22,10 +23,11 @@ import { SvgImporterComponent } from '../global/presentation/components/svg-impo
     EquipmentComponent,
     MixedComponent,
   ],
-  imports: [
-    CommonModule,
-    CreateBagRoutingModule,
-    SvgImporterComponent
-  ]
+    imports: [
+        CommonModule,
+        CreateBagRoutingModule,
+        SvgImporterComponent,
+        FormsModule
+    ]
 })
 export class CreateBagModule { }

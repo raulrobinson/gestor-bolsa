@@ -27,6 +27,10 @@ export const AppRoutes: Routes = [
     loadChildren: () => import('./approval-bag/approval-bag.module').then(m => m.ApprovalBagModule)
   },
   {
+    path: "consulta-reportes",
+    loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)
+  },
+  {
     path: "",
     loadChildren: () => import('./global/global.module').then(m => m.GlobalModule)
   }

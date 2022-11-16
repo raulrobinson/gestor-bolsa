@@ -115,4 +115,8 @@
   .input_disable_global {
     @apply shadow-lg text-blue-600 text-sm rounded-lg block w-full p-2.5 hover:border-blue-300 bg-gray-200;
   }
+
+  .hr_global {
+    @apply my-2 h-px bg-gray-200 border-0 col-span-12;
+  }
 }

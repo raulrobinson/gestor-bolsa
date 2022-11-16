@@ -11,6 +11,7 @@ import {CreateBagModule} from "./create-bag/create-bag.module";
 import {CatchmentManagementModule} from "./catchment-management/catchment-management.module";
 import {RetentionManagementModule} from "./retention-management/retention-management.module";
 import {ApprovalBagModule} from "./approval-bag/approval-bag.module";
+import {ReportsModule} from "./reports/reports.module";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {ApprovalBagModule} from "./approval-bag/approval-bag.module";
     CreateBagModule,
     CatchmentManagementModule,
     RetentionManagementModule,
-    ApprovalBagModule
+    ApprovalBagModule,
+    ReportsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

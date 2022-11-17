@@ -11,7 +11,7 @@ export const GlobalRoutes: Routes = [
   },
   {
     path: "welcome",
-    component: GlobalWecomeComponent
+    component: GlobalWecomeComponent,
   },
   {
     path: "forbidden",
@@ -19,10 +19,10 @@ export const GlobalRoutes: Routes = [
   },
   {
     path:"**",
-    redirectTo:"notfound"
+    redirectTo:"not-found"
   },
   {
-    path: "notfound",
+    path: "not-found",
     component: GlobalNotFoundComponent
   }
 

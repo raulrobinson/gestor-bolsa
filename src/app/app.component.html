@@ -7,6 +7,6 @@
       <app-header></app-header>
       <app-breadcrumb></app-breadcrumb>
     </div>
-    <router-outlet></router-outlet>
+    <router-outlet *ngIf="!isIframe"></router-outlet>
   </main>
 </div>

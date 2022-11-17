@@ -1,1 +1,51 @@
-<p>login works!</p>
+<div class="h-screen lg:flex absolute top-0 left-0 w-screen bg-blue-300">
+  <div class="flex lg:w-1/2 justify-center py-10 items-start sm:items-center bg-white h-full px-4">
+    <div class="w-full md:w-3/5 flex flex-col items-center justify-center space-y-8">
+
+      <div class="w-full h-auto flex items-center justify-center visible lg:hidden">
+        <app-svg-importer classes="fill-blue-300 w-24 h-24" [iconName]="'movistar-icon'"></app-svg-importer>
+      </div>
+
+      <!-- <div class="w-full">
+        <label for="nombreUsuario" class="label_global">NOMBRE DE USUARIO<em class="text-magenta-300">*</em></label>
+        <div class="flex w-full items-center h-full space-x-2">
+          <div class="h-full">
+            <app-svg-importer classes="fill-blue-300 w-10 h-10" [iconName]="'identity-icon'"></app-svg-importer>
+          </div>
+          <input type="text" id="nombreUsuario" class="input_global" placeholder="NOMBRE DE USUARIO" >
+        </div>
+      </div>
+
+      <div class="w-full">
+        <label for="clave" class="label_global">CONTRASEÑA<em class="text-magenta-300">*</em></label>
+        <div class="flex w-full items-center h-full space-x-2">
+          <div class="h-full">
+            <app-svg-importer classes="fill-blue-300 w-10 h-10" [iconName]="'key-icon'"></app-svg-importer>
+          </div>
+          <input type="password" id="clave" class="input_global" placeholder="CONTRASEÑA" >
+        </div>
+      </div> -->
+
+      <div class="w-full">
+        <button class="btn_secondary_global" (click)="iniciarSesionConAD();">
+          Iniciar sesión como usuario interno
+        </button>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div
+    class="relative overflow-hidden lg:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+    <div>
+      <app-svg-importer classes="fill-white w-24 h-24" [iconName]="'movistar-icon'"></app-svg-importer>
+    </div>
+  </div>
+</div>

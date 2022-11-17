@@ -72,9 +72,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         -HEADER-COMPONENT [FOLDER COMPONENT]
         -CONTAINER-COMPONENT [FOLDER COMPONENT]
         -FOOTER-COMPONENT [FOLDER COMPONENT]
-    -DATA
-      -INTERCEPTORS [FOLDER]
-        -GLOBAL-INTERCEPTOR.TS
   -USER: [MODULE] -> [EXAMPLE OF MODULE]
     -DOMAIN [FOLDER]
       -MODELS [FOLDER]
@@ -85,13 +82,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
       -USE_CASE [FOLDER]
         -LOGIN-USECASE.TS [IMPLEMENTS USECASE]
         -REGISTER-USECASE.TS [IMPLEMENTS USECASE]
+    -INFRASTRUCTURE
+        -USER-IMPLEMENTATIONS.REPOSITORIES.TS [SERVICE]
     -DATA [FOLDER]
       -ENTITIES [FOLDER]
         -USER.ENTITY.TS [INTERFACE OR CLASS]
-      -REPOSITORIES
-        -USER-IMPLEMENTATIONS.REPOSITORIES.TS [SERVICE]
-      -INTERCEPTORS
-        -AUTH.INTERCEPTOR.TS [SERVICE]
       -MAPPERS [FOLDER]
         -USER-REPOSITORY.MAPPER.TS [CLASS, IMPLEMENTS MAPPER INTERFACE]
         .
@@ -110,8 +105,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         .
         .
         .N
+      -SERVICES
+        -N
+      -INTERCEPTORS
+        -AUTH.INTERCEPTOR.TS [SERVICE]
     -USER.MODULE.TS [MODULE FILE]
       * DECLARAR COMPONENTES
       * IMPORTAR COMMOMMODULE
+      * IMPORTAR RUTAS HIJAS
       * EXPORTAR LOS COMPONENTES QUE REQUIERAN EXPORTARSE
 ## se usa tailwind: https://tailwindcss.com/
+## para el futuro:
+### Design System -> se pueden extraer del style.scss
+### Translate (i18N+ standard)

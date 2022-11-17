@@ -21,6 +21,8 @@ export class SvgImporterComponent implements OnInit {
   movistarIcon:boolean=false;
   menuIcon:boolean=false;
   closeIcon:boolean=false;
+  identityIcon:boolean=false;
+  keyIcon:boolean=false;
 
   defaultIcon:boolean=false;
 
@@ -90,6 +92,18 @@ export class SvgImporterComponent implements OnInit {
       this.closeIcon=true;
     } else {
       this.closeIcon=false;
+    }
+
+    if (this.iconName===IconNamesEnum.IDENTITY_ICON) {
+      this.identityIcon=true;
+    } else {
+      this.identityIcon=false;
+    }
+
+    if (this.iconName===IconNamesEnum.KEY_ICON) {
+      this.keyIcon=true;
+    } else {
+      this.keyIcon=false;
     }
 
 

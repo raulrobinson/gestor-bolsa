@@ -4,7 +4,11 @@ export const AppRoutes: Routes = [
 
   {
     path: "crear-bolsa",
-    loadChildren: () => import('./create-bag/create-bag.module').then(m => m.CreateBagModule)
+    loadChildren: () => import('./create-bag/create-bag.module').then(m => m.CreateBagModule),
+  },
+  {
+    path: "inicio-sesion",
+    loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
   },
   {
     path: "editar-bolsa",

@@ -11,5 +11,6 @@ export enum IconNamesEnum{
   MENU_ICON="menu-icon",
   CLOSE_ICON="close-icon",
   DEFAULT_ICON="default-icon",
-  MOVISTAR_ICON="movistar-icon"
+  MOVISTAR_ICON="movistar-icon",
+  SALIR_ICON="salir-icon"
 }

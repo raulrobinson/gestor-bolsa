@@ -51,7 +51,14 @@ export class SidenavComponent implements OnInit {
       {
         icon: "reportes-icon",
         name: "Consultas Y Reportes",
-        route: "/consulta-reportes"
+        route: "/consulta-reportes",
+        isActive: false
+      },
+      {
+        icon: "salir-icon",
+        name: "Cerrar Sesión",
+        route: "/",
+        isActive: false
       }
     ]
   }

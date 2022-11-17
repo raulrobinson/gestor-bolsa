@@ -24,8 +24,14 @@ export class AuthService {
     this.setupAzureProvider();
     _authMsalImplementation.login();
   }
+
   handleUserWithAzureDirectory(){
     this.setupAzureProvider();
     _authMsalImplementation.handleUserAuth();
+  }
+
+  logout() {
+    this.setupAzureProvider();
+    _authMsalImplementation.logOut();
   }
 }

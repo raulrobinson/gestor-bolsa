@@ -23,6 +23,7 @@ export class SvgImporterComponent implements OnInit {
   closeIcon:boolean=false;
   identityIcon:boolean=false;
   keyIcon:boolean=false;
+  salirIcon:boolean=false;
 
   defaultIcon:boolean=false;
 
@@ -106,18 +107,16 @@ export class SvgImporterComponent implements OnInit {
       this.keyIcon=false;
     }
 
-
-
-
-
-
+    if (this.iconName===IconNamesEnum.SALIR_ICON) {
+      this.keyIcon=true;
+    } else {
+      this.keyIcon=false;
+    }
 
     if (this.iconName===IconNamesEnum.DEFAULT_ICON) {
       this.defaultIcon=true;
     } else {
       this.defaultIcon=false;
     }
-
   }
-
 }

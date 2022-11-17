@@ -119,6 +119,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 
 se usa tailwind: https://tailwindcss.com/
-para el futuro:
-
-Design System -> se pueden extraer del style.scss
+para el futuro: Design System -> se pueden extraer del style.scss

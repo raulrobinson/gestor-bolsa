@@ -6,7 +6,6 @@ import { ContainerComponent } from './presentation/components/container/containe
 import { FooterComponent } from './presentation/components/footer/footer.component';
 import { NotFoundComponent } from './presentation/components/not-found/not-found.component';
 import { ForbiddenComponent } from './presentation/components/forbidden/forbidden.component';
-import { WelcomeComponent } from './presentation/components/welcome/welcome.component';
 import { GlobalRoutingModule } from './presentation/routing/global-routing.module';
 import { SvgImporterComponent } from './presentation/components/svg-importer/svg-importer.component';
 import { BreadcrumbComponent } from './presentation/components/breadcrumb/breadcrumb.component';
@@ -20,7 +19,6 @@ import { BreadcrumbComponent } from './presentation/components/breadcrumb/breadc
     FooterComponent,
     NotFoundComponent,
     ForbiddenComponent,
-    WelcomeComponent,
     BreadcrumbComponent,
   ],
   exports: [

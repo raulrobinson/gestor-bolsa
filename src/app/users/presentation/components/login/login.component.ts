@@ -13,7 +13,13 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+      // this.setLoginDisplay();
   }
+
+  // setLoginDisplay() {
+  //   this.loginDisplay = this.authService.instance.getAllAccounts().length > 0;
+  // }
 
   iniciarSesionConAD(){
     this._authService.loginWithAzureDirectory();

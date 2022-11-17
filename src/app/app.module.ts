@@ -102,7 +102,6 @@ export function MSALGuardConfigFactory(): MsalGuardConfiguration {
       provide: MSAL_INTERCEPTOR_CONFIG,
       useFactory: MSALInterceptorConfigFactory
     },
-    MsalGuard,
   ],
   bootstrap: [AppComponent, MsalRedirectComponent]
 })

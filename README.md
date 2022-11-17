@@ -26,8 +26,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## Estructura General de la Plantilla:
-```json
--- assets
+```
+- assets
   - img [ONLY IMAGES]
     - icons
     - background

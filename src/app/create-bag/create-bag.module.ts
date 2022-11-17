@@ -8,8 +8,6 @@ import { CreateBagRoutingModule } from './presentation/routing/create-bag-routin
 import { SvgImporterComponent } from '../global/presentation/components/svg-importer/svg-importer.component';
 import {FormsModule} from "@angular/forms";
 
-
-
 @NgModule({
   declarations: [
     MenuComponent,

@@ -118,5 +118,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
       * EXPORTAR LOS COMPONENTES QUE REQUIERAN EXPORTARSE
 ```
 
-se usa tailwind: https://tailwindcss.com/
+se usa tailwind: https://tailwindcss.com
+
 para el futuro: Design System -> se pueden extraer del style.scss

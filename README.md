@@ -1,6 +1,6 @@
-# Gestión de bolsas
+# GESTOR BOLSA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
 ## Development server
 
@@ -25,96 +25,100 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-# ESTRUCTURA GENERAL DE LA PLANTILLA:
--ASSETS
-  -IMGS [ONLY IMAGES]
-    -ICONS
-    -BACKGROUNDS
-    -LOGOS
-    -OTHERS [OTHER IMAGE CATEGORIES]
-  -MEDIA [DIFFERENT OF IMAGE]
-    -VIDEOS
-    -SOUND
-    .
-    .
-    .N
-  -FONTS
-  -FILES [EXTRA FILES]
--ENVIRONMENTS
-  -ENVIRONMENT.PROD.TS
-  -ENVIRONMET.DEV.TS
-  -ENVIRONMET.TEST.TS
-  -ENVIRONMENT.TS
--APP:
-  -COMMONS [FOLDER]
-    -DATA
-      -MAPPER.TS [ABSTRACT CLASS]
-    -APPLICATION
-      -USECASE.TS [INTERFACE]
-  -GLOBAL: [MODULE] -> [GLOBAL LAYOUT DEPEND OF PROJECT]
-    -DOMAIN
-      -MODELS
-        -SIDENAV-ITEM-MENU.MODEL.TS
-    -APPLICATION
-      -USE-CASE
-        -CHANGE-TO-DARK-MODE-USECASE.TS
-        .
-        .
-        .N
-    -PRESENTATION
-      -ROUTING
-        -GLOBAL-ROUTING.TS
-      -GUARDS [FOLDER]
-      -PIPES [FOLDER]
-      -DIRECTIVES [FOLDER]
-      -COMPONENTS
-        -SIDENAV-COMPONENT [FOLDER COMPONENT]
-        -HEADER-COMPONENT [FOLDER COMPONENT]
-        -CONTAINER-COMPONENT [FOLDER COMPONENT]
-        -FOOTER-COMPONENT [FOLDER COMPONENT]
-  -USER: [MODULE] -> [EXAMPLE OF MODULE]
-    -DOMAIN [FOLDER]
-      -MODELS [FOLDER]
-        -USER.MODEL.TS [INTERFACE OR CLASS][SUGGEST CLASS - AVOID ANEMIC DOMAIN MODEL]
-      -REPOSITORIES [FOLDER]
-        -USER.REPOSITORY.TS [INTERFACE]
-    -APPLICATION [FOLDER]
-      -USE_CASE [FOLDER]
-        -LOGIN-USECASE.TS [IMPLEMENTS USECASE]
-        -REGISTER-USECASE.TS [IMPLEMENTS USECASE]
-    -INFRASTRUCTURE
-        -USER-IMPLEMENTATIONS.REPOSITORIES.TS [SERVICE]
-    -DATA [FOLDER]
-      -ENTITIES [FOLDER]
-        -USER.ENTITY.TS [INTERFACE OR CLASS]
-      -MAPPERS [FOLDER]
-        -USER-REPOSITORY.MAPPER.TS [CLASS, IMPLEMENTS MAPPER INTERFACE]
-        .
-        .
-        .
-        .N
-    -PRESENTATION [FOLDER]
-      -ROUTING
-        -USER-ROUTING.TS
-      -GUARDS [FOLDER]
-      -PIPES [FOLDER]
-      -DIRECTIVES [FOLDER]
-      -COMPONENTS [FOLDER]
-        -USER-DETAIL-COMPONENT [FOLDER COMPONENT]
-        -USER-LIST-COMPONENT [FOLDER COMPONENT]
-        .
-        .
-        .N
-      -SERVICES
-        -N
-      -INTERCEPTORS
-        -AUTH.INTERCEPTOR.TS [SERVICE]
-    -USER.MODULE.TS [MODULE FILE]
+## Estructura General de la Plantilla:
+```json
+- assets
+  - img [ONLY IMAGES]
+    - icons
+    - background
+    - logos
+    - others [OTHER IMAGE CATEGORIES]
+  - media [DIFFERENT OF IMAGE]
+    - videos
+    - sound
+    ...
+    ...
+    ...
+  -fonts
+  -files [EXTRA FILES]
+-environment
+  -environment.prod.ts
+  -environment.dev.ts
+  -environment.test.ts
+  -environment.ts
+-app:
+  -commons [FOLDER]
+    -data
+      -mapper.ts [ABSTRACT CLASS]
+    -application
+      -usecase.ts [INTERFACE]
+  -global: [MODULE] -> [GLOBAL LAYOUT DEPEND OF PROJECT]
+    -domain
+      -models
+        -sidenav-item-menu.model.ts
+    -application
+      -use-case
+        -change-to-dark-mode-usecase.ts
+        ...
+        ...
+        ...
+    -presentation
+      -routing
+        -global-routing.ts
+      -guards [FOLDER]
+      -pipes [FOLDER]
+      -directives [FOLDER]
+      -components
+        -sidenav-component [FOLDER COMPONENT]
+        -header-component [FOLDER COMPONENT]
+        -container-component [FOLDER COMPONENT]
+        -footer-component [FOLDER COMPONENT]
+  -user: [MODULE] -> [EXAMPLE OF MODULE]
+    -domain [FOLDER]
+      -models [FOLDER]
+        -user.model.ts [INTERFACE OR CLASS][SUGGEST CLASS - AVOID ANEMIC DOMAIN MODEL]
+      -repositories [FOLDER]
+        -user.repository.ts [INTERFACE]
+    -application [FOLDER]
+      -use_case [FOLDER]
+        -login-usecase.ts [IMPLEMENTS USECASE]
+        -register-usecase.ts [IMPLEMENTS USECASE]
+    -infrastructure
+        -user-implementations.repositories.ts [SERVICE]
+    -data [FOLDER]
+      -entities [FOLDER]
+        -user.entity.ts [INTERFACE OR CLASS]
+      -mappers [FOLDER]
+        -user-repository.mapper.ts [CLASS, IMPLEMENTS MAPPER INTERFACE]
+        ...
+        ...
+        ...
+        ...
+    -presentation [FOLDER]
+      -routing
+        -user-routing.ts
+      -guards [FOLDER]
+      -pipes [FOLDER]
+      -directives [FOLDER]
+      -components [FOLDER]
+        -user-detail-component [FOLDER COMPONENT]
+        -user-list-component [FOLDER COMPONENT]
+        ...
+        ...
+        ...
+      -services
+        -...
+      -interceptors
+        -auth.interceptor.ts [SERVICE]
+    -user.module.ts [MODULE FILE]
+
       * DECLARAR COMPONENTES
       * IMPORTAR COMMOMMODULE
       * IMPORTAR RUTAS HIJAS
       * EXPORTAR LOS COMPONENTES QUE REQUIERAN EXPORTARSE
-## se usa tailwind: https://tailwindcss.com/
-## para el futuro:
-### Design System -> se pueden extraer del style.scss
-### Translate (i18N+ standard)
+```
+
+se usa tailwind: https://tailwindcss.com/
+para el futuro:
+
+Design System -> se pueden extraer del style.scss
